@@ -7,6 +7,7 @@ A real-time chat application inspired by the [CM Chat App](cfigma.com/design/cX2
 
 - Real-time messaging
 - Responsive design
+- Authentication
 
 ## Tech Stack
 
