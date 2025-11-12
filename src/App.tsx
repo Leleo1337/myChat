@@ -1,11 +1,20 @@
-import MobileChatsPage from "./pages/MobileChatsPage";
+import { BrowserRouter, Route, Routes } from "react-router";
+import ChatsPage from "./pages/chats/ChatsPage";
 
 function App() {
     return (
         <>
-            <div className="w-full h-screen bg-gray-200/95">
-                <MobileChatsPage />
-            </div>
+            <BrowserRouter basename="/">
+                <Routes>
+                    <Route path="/auth/register" element={""}></Route>
+                    <Route path="/auth/login" element={""}></Route>
+
+                    <Route path="/" element={<ChatsPage />}></Route>
+                    <Route path="/chat/:id" element={""}></Route>
+                    <Route path="/settings" element={""}></Route>
+                    <Route path="/profile" element={""}></Route>
+                </Routes>
+            </BrowserRouter>
         </>
     );
 }
