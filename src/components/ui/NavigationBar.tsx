@@ -1,6 +1,7 @@
+import testProfilePicture from "../../assets/testProfilePicture.jpg";
 import { MessageCircleIcon, PhoneIcon, Settings, UsersIcon } from "lucide-react";
 import { useState } from "react";
-import myChatLogo from "../../assets/myChat_LOGO.png"
+import myChatLogo from "../../assets/myChat_LOGO-removebg-preview.png";
 
 type tabTypes = {
     message: boolean;
@@ -29,7 +30,7 @@ export default function NavigationBar() {
 
     return (
         <>
-            <div className="fixed bottom-0 w-full p-2 border-t border-gray-200 sm:p-3 sm:border-t-0 sm:border-r bg-white/70 sm:left-0 sm:bottom-auto sm:w-32 sm:h-full">
+            <div className="fixed bottom-0 z-10 w-full p-2 bg-gray-100 border-t border-gray-200 shadow-md md:bg-gray-50 sm:p-3 md:border-t-0 sm:border-r sm:left-0 md:bottom-auto sm:w-32 sm:h-full">
                 <div className="flex items-center justify-around gap-2 sm:flex-col sm:gap-8">
                     <div className="hidden sm:block">
                         <img src={myChatLogo} alt="" />
@@ -72,6 +73,13 @@ export default function NavigationBar() {
                             } cursor-pointer`}>
                             <Settings onClick={() => handleTabActivation("settings")} className="w-6 h-6" />
                         </div>
+                    </div>
+                    <div className="absolute hidden cursor-pointer bottom-8 sm:block">
+                        <img
+                            src={testProfilePicture}
+                            alt=""
+                            className="object-cover w-12 h-12 border rounded-full border-blue-400/30"
+                        />
                     </div>
                 </div>
             </div>
