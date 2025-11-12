@@ -5,7 +5,7 @@ import Chat from "./Chat";
 export default function ChatsPage() {
     return (
         <>
-            <div className="relative w-full h-screen bg-white/95">
+            <div className="relative w-full min-h-full bg-white border-r border-gray-300 shadow-sm">
                 <NavigationBar />
 
                 {/* mobile */}
