@@ -10,7 +10,7 @@ type tabTypes = {
     settings: boolean;
 };
 
-export default function NavigationBar() {
+export default function NavigationBar({ activateTab }: any) {
     const [activeTab, setActiveTab] = useState<tabTypes>({
         message: true,
         user: false,
@@ -26,21 +26,22 @@ export default function NavigationBar() {
             phone: tab == "phone",
             settings: tab == "settings",
         });
+        activateTab(tab);
     }
 
     return (
         <>
-            <div className="fixed bottom-0 z-10 w-full p-2 bg-gray-100 border-t border-gray-200 shadow-md md:bg-gray-50 sm:p-3 md:border-t-0 sm:border-r sm:left-0 md:bottom-auto sm:w-32 sm:h-full">
+            <div className="fixed bottom-0 z-10 w-full p-2 transition-colors duration-300 bg-white border-t border-gray-200 shadow-md sm:p-3 sm:left-0 sm:w-32 sm:h-full sm:border-t-0 sm:border-r dark:bg-slate-900 dark:border-slate-800">
                 <div className="flex items-center justify-around gap-2 sm:flex-col sm:gap-8">
                     <div className="hidden sm:block">
-                        <img src={myChatLogo} alt="" />
+                        <img src={myChatLogo} alt="myChat logo" />
                     </div>
                     <div
                         onClick={() => handleTabActivation("message")}
                         className={`${
                             activeTab.message
                                 ? activeTabStyles
-                                : "text-gray-400 hover:bg-white/20 hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
+                                : "text-gray-400 hover:bg-blue-100 hover:text-blue-500 dark:text-slate-400 dark:hover:bg-blue-800/30 dark:hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
                         } cursor-pointer`}>
                         <MessageCircleIcon className="w-6 h-6" />
                     </div>
@@ -49,7 +50,7 @@ export default function NavigationBar() {
                         className={`${
                             activeTab.user
                                 ? activeTabStyles
-                                : "text-gray-400 hover:bg-white/20 hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
+                                : "text-gray-400 hover:bg-blue-100 hover:text-blue-500 dark:text-slate-400 dark:hover:bg-blue-800/30 dark:hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
                         } cursor-pointer`}>
                         <UsersIcon className="w-6 h-6" />
                     </div>
@@ -58,18 +59,18 @@ export default function NavigationBar() {
                         className={`${
                             activeTab.phone
                                 ? activeTabStyles
-                                : "text-gray-400 hover:bg-white/20 hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
+                                : "text-gray-400 hover:bg-blue-100 hover:text-blue-500 dark:text-slate-400 dark:hover:bg-blue-800/30 dark:hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
                         } cursor-pointer`}>
                         <PhoneIcon onClick={() => handleTabActivation("phone")} className="w-6 h-6" />
                     </div>
 
-                    <div className="flex items-center justify-center pl-4 border-l-2 border-gray-300 sm:border-l-0 sm:border-t-2 sm:pl-0 sm:pt-2">
+                    <div className="flex items-center justify-center pl-4 border-l-2 border-gray-300 dark:border-gray-600 sm:border-l-0 sm:border-t-2 sm:pl-0 sm:pt-2">
                         <div
                             onClick={() => handleTabActivation("settings")}
                             className={`${
                                 activeTab.settings
                                     ? activeTabStyles
-                                    : "text-gray-400 hover:bg-white/20 hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
+                                    : "text-gray-400 hover:bg-blue-100 hover:text-blue-500 dark:text-slate-400 dark:hover:bg-blue-800/30 dark:hover:text-blue-400 p-3 rounded-xl transition-all duration-200"
                             } cursor-pointer`}>
                             <Settings onClick={() => handleTabActivation("settings")} className="w-6 h-6" />
                         </div>
