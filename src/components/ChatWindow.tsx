@@ -1,6 +1,6 @@
-import EmptyChat from "../../components/ui/EmptyChat";
+import EmptyChat from "./ui/EmptyChat";
 
-export default function Chat() {
+export default function ChatWindow() {
     return (
         <>
             <div className="hidden w-full min-h-full lg:block">
