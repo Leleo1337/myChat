@@ -1,11 +1,15 @@
 import EmptyChat from "./EmptyChat";
 
-export default function ChatWindow() {
+export default function ChatWindow({ activeChat }: any) {
     return (
         <>
-            <div className="hidden w-full min-h-full lg:block">
-                <EmptyChat />
-            </div>
+            {activeChat ? (
+                <div></div>
+            ) : (
+                <div className="hidden w-full min-h-full lg:block">
+                    <EmptyChat />
+                </div>
+            )}
         </>
     );
 }
