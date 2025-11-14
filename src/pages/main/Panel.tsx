@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import NavigationBar from "../../components/ui/NavigationBar";
-import MessageTab from "./TabContent/MessageContent";
-import SettingsTab from "./TabContent/SettingsContent";
+import MessageContent from "./TabContent/MessageContent";
+import SettingsContent from "./TabContent/SettingsContent";
 
 export default function Panel() {
     const [activeTab, setActiveTab] = useState("message");
@@ -10,13 +10,13 @@ export default function Panel() {
     const renderTabsContents = () => {
         switch (activeTab) {
             case "message":
-                return <MessageTab />;
+                return <MessageContent />;
             case "user":
                 return "";
             case "phone":
                 return "";
             case "settings":
-                return <SettingsTab />;
+                return <SettingsContent />;
         }
     };
 
