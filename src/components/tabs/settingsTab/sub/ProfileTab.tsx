@@ -1,4 +1,5 @@
 import { ChevronLeft, User } from "lucide-react";
+import testProfilePicture from "../../../../assets/testProfilePicture.jpg";
 
 export default function ProfileTab({ setActiveSection }: any) {
     return (
@@ -15,7 +16,49 @@ export default function ProfileTab({ setActiveSection }: any) {
                         <span className="font-semibold text-gray-800 dark:text-gray-100">Profile</span>
                     </div>
                 </div>
-                <div className="flex justify-center mt-4"></div>
+                <div className="flex flex-col gap-4">
+                    <div className="flex flex-col items-center justify-center gap-6 mt-4">
+                        <img
+                            src={testProfilePicture}
+                            className="object-cover w-32 h-32 border rounded-full border-blue-400/30"
+                            alt="profile picture"
+                        />
+                        <div className="flex flex-col w-full gap-0.5">
+                            <label htmlFor="iname" className="text-sm text-gray-800 dark:text-slate-50">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="iname"
+                                name="iname"
+                                className="w-full py-2.5 p-4 text-gray-800 bg-gray-100 border border-gray-300 rounded-md placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none transition-all duration-200 dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
+                                placeholder="Search"
+                                value={"Pessoa legal"}
+                            />
+                            <p className="p-2 mt-2 text-sm border border-gray-300 text-slate-300 rounded-xl dark:border-slate-800">
+                                This name is visible to your contacts
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <label htmlFor="iabout" className="text-sm text-gray-800 dark:text-slate-50">
+                            About
+                        </label>
+                        <textarea
+                            name="iabout"
+                            id="iabout"
+                            className="w-full py-2.5 p-4 text-gray-800 bg-gray-100 border border-gray-300 rounded-md placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none transition-all duration-200 dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
+                            value={"blablablabla"}
+                            >
+                                
+                            </textarea>
+                    </div>
+                    <div className="flex justify-end">
+                        <button className="p-8 py-2 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md cursor-pointer active:outline-0 hover:text-blue-500 hover:border-blue-500 hover:ring-2 hover:ring-blue-500/30 hover:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500">
+                            Save
+                        </button>
+                    </div>
+                </div>
             </div>
         </>
     );
