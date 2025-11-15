@@ -1,6 +1,6 @@
 import { ChevronRight, Languages, Palette, User } from "lucide-react";
 
-export default function SettingsSection({ setActiveSection }: any) {
+export default function SettingsSubContent({ setActiveSection }: any) {
     return (
         <>
             <div className="mb-8">
