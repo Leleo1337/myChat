@@ -1,33 +1,16 @@
 import { Send } from "lucide-react";
 import { mockMessages } from "../../data/mockMessages";
-import dateFormatter from "../../utils/dateFormatter";
+import MessageBubble from "./MessageBubble";
 
 export default function ChatBody() {
     return (
-        <div className="flex flex-col max-h-full pl-4 pr-0 py-4 overflow-y-scroll">
+        <div className="flex flex-col max-h-full pl-4 pr-0 py-4 overflow-y-scroll h-full">
             <div className="flex flex-col flex-1 gap-4 pb-4 pr-2 overflow-y-auto">
                 <div className="flex items-center justify-center p-8 my-8 text-center border border-gray-300 rounded-xl dark:border-gray-800">
                     <p>This is the start of your conversation</p>
                 </div>
                 {mockMessages.map((msg) => (
-                    <div className={`flex w-full ${msg.sender == "me" ? "justify-end" : "justify-start"}`}>
-                        <div className="flex flex-col">
-                            <div
-                                className={`${
-                                    msg.sender == "me" ? "bg-blue-500 text-white" : "bg-gray-200 dark:bg-gray-800"
-                                } px-3 py-2 rounded-2xl max-w-[400px] break-all`}>
-                                <p>{msg.content}</p>
-                            </div>
-                            <span
-                                className={`text-[10px] px-0.5 flex ${
-                                    msg.sender == "me"
-                                        ? "text-gray-600 dark:text-gray-200 justify-start"
-                                        : "text-gray-400 justify-end"
-                                }`}>
-                                {dateFormatter(msg.timestamp)}
-                            </span>
-                        </div>
-                    </div>
+                    <MessageBubble key={msg.id} sender={msg.sender} timestamp={msg.timestamp} content={msg.content} />
                 ))}
             </div>
             <div className="pt-4 pb-16 border-t border-gray-300 dark:border-gray-800 sm:pb-0">
