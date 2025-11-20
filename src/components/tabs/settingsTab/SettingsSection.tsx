@@ -1,7 +1,7 @@
 import { useState } from "react";
-import SettingsSubContent from "./sub/SettingsSubContent";
-import AppearanceTab from "./sub/AppaeranceTab";
-import AccountTab from "./sub/AccountTab";
+import SettingsSubContent from "./sub/SettingsSubContent.tsx";
+import AppearanceTab from "./sub/AppaeranceTab.tsx";
+import AccountTab from "./sub/AccountTab.tsx";
 import ProfileTab from "./sub/ProfileTab.tsx";
 
 export default function SettingsSection() {

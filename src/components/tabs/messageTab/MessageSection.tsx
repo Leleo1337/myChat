@@ -1,7 +1,7 @@
 import { Box, Search } from "lucide-react";
 import ChatItem from "./ChatItem";
 
-export default function MessageTab() {
+export default function MessageSection() {
     return (
         <>
             <div className="w-full h-screen p-2 py-8 sm:pl-34 lg:max-w-[600px] bg-white overflow-y-scroll border-r border-gray-300 dark:bg-slate-900 dark:border-slate-800 transition-colors duration-300">

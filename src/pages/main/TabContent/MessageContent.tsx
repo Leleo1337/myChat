@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import MessagePanel from "../../../components/tabs/messageTab/MessageTab";
+import MessageSection from "../../../components/tabs/messageTab/MessageSection";
 import ChatWindow from "../../../components/chat/ChatWindow";
 
 export default function MessageContent() {
@@ -9,7 +9,7 @@ export default function MessageContent() {
         <>
             {!activeChat ? (
                 <div className="flex-1 lg:hidden">
-                    <MessagePanel />
+                    <MessageSection />
                 </div>
             ) : (
                 <div className="flex-1 w-full h-full lg:hidden sm:pl-32 dark:bg-slate-800/30">
@@ -18,7 +18,7 @@ export default function MessageContent() {
             )}
 
             <div className="hidden w-full h-full lg:flex lg:flex-row dark:bg-slate-800/30">
-                <MessagePanel />
+                <MessageSection />
                 <ChatWindow activeChat={activeChat} />
             </div>
         </>

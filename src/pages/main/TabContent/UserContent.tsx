@@ -1,9 +1,9 @@
-import { useParams } from "react-router";
-import ChatWindow from "../../../components/chat/ChatWindow";
 import { useEffect, useState } from "react";
-import SettingsSection from "../../../components/tabs/settingsTab/SettingsSection";
+import ChatWindow from "../../../components/chat/ChatWindow";
+import { useParams } from "react-router";
+import UserSection from "../../../components/tabs/userTab/UserSection";
 
-export default function SettingsContent() {
+export default function UserContent() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
     const { id: activeChat } = useParams();
 
@@ -19,11 +19,11 @@ export default function SettingsContent() {
         <>
             {!activeChat ? (
                 <div className="flex-1 lg:hidden">
-                    <SettingsSection />
+                    <UserSection />
                 </div>
             ) : isMobile ? (
                 <div className="flex-1 lg:hidden">
-                    <SettingsSection />
+                    <UserSection />
                 </div>
             ) : (
                 <div className="flex-1 lg:hidden">
@@ -32,7 +32,7 @@ export default function SettingsContent() {
             )}
 
             <div className="hidden w-full h-full lg:flex lg:flex-row">
-                <SettingsSection />
+                <UserSection />
                 <ChatWindow activeChat={activeChat} />
             </div>
         </>
