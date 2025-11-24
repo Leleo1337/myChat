@@ -1,6 +1,6 @@
 import { ChevronRight, Languages, LockKeyhole, Palette, User } from "lucide-react";
 
-export default function SettingsSubContent({ setActiveSection }: any) {
+export default function SettingsSubTabs({ setActiveSection }: any) {
     return (
         <>
             <div className="mb-8">
