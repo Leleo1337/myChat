@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SettingsSubTabs from "./sub/SettingsSubTabs.tsx";
+import SettingsSubTabs from "./SettingsSubTabs.tsx";
 import AppearanceTab from "./sub/AppaeranceTab.tsx";
 import AccountTab from "./sub/AccountTab.tsx";
 import ProfileTab from "./sub/ProfileTab.tsx";
