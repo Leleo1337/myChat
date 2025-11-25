@@ -18,20 +18,20 @@ export default function UserContent() {
     return (
         <>
             {!activeChat ? (
-                <div className="flex-1 lg:hidden">
+                <div className="flex-1 lg:hidden dark:bg-slate-800/30">
                     <ContactSection />
                 </div>
             ) : isMobile ? (
-                <div className="flex-1 lg:hidden">
+                <div className="flex-1 lg:hidden dark:bg-slate-800/30">
                     <ContactSection />
                 </div>
             ) : (
-                <div className="flex-1 lg:hidden">
+                <div className="flex-1 lg:hidden dark:bg-slate-800/30">
                     <ChatWindow activeChat={activeChat} />
                 </div>
             )}
 
-            <div className="hidden w-full h-full lg:flex lg:flex-row">
+            <div className="hidden w-full h-full lg:flex lg:flex-row dark:bg-slate-800/30">
                 <ContactSection />
                 <ChatWindow activeChat={activeChat} />
             </div>
