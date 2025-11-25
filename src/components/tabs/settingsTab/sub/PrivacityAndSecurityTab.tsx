@@ -18,7 +18,7 @@ export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
                 </div>
                 <div>
                     <div className="pb-4">
-                        <div className="flex gap-2 pb-2 text-base font-semibold border-b border-gray-300 dark:border-slate-800">
+                        <div className="flex items-center gap-2 pb-2 text-base font-semibold border-b border-gray-300 dark:border-slate-800">
                             <Shield className="text-blue-500" />
                             <h2 className="text-gray-800 dark:text-gray-200">Two factor Authentication (2FA)</h2>
                         </div>
