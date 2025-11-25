@@ -1,9 +1,13 @@
 import { ChevronLeft, Scale, Shield } from "lucide-react";
+import { useState } from "react";
+import TwoFactorAuthModal from "../../../ui/modals/TwoFactorAuthModal";
 
 export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
+    const [twoFactorModalOpen, setTwoFactorModalOpen] = useState(false);
     const status = "Disabled";
     return (
         <>
+            {twoFactorModalOpen && <TwoFactorAuthModal setModalOpen={setTwoFactorModalOpen} />}
             <div className="p-5 transition-colors border border-gray-300 shadow-md bg-gray-50 dark:bg-gray-900 dark:border-slate-800 rounded-2xl">
                 <div className="relative flex items-center justify-center pb-8">
                     <div
@@ -35,7 +39,9 @@ export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
                                         {status}
                                     </span>
                                 </div>
-                                <button className="text-sm bg-blue-500 px-4 py-1.5 rounded-xl cursor-pointer hover:bg-blue-600 font-semibold text-white">
+                                <button
+                                    onClick={() => setTwoFactorModalOpen(!twoFactorModalOpen)}
+                                    className="text-sm bg-blue-500 px-4 py-1.5 rounded-xl cursor-pointer hover:bg-blue-600 font-semibold text-white">
                                     Enable 2FA
                                 </button>
                             </div>
