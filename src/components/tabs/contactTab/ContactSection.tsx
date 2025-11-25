@@ -27,8 +27,8 @@ export default function ContactSection() {
                         <div className="py-8 border-b border-gray-300 dark:border-gray-800">
                             <button
                                 onClick={() => setIsModalOpen(!isModalOpen)}
-                                className="flex items-center gap-4 font-semibold text-blue-500 cursor-pointer hover:text-blue-700">
-                                <div className="p-2 text-white bg-blue-500 rounded-full">
+                                className="flex items-center gap-2 font-semibold text-blue-500 cursor-pointer hover:text-blue-700">
+                                <div className="p-1.5 text-white bg-blue-500 rounded-full">
                                     <UserPlus />
                                 </div>
                                 New contact
