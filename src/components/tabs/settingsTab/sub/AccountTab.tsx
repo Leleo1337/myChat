@@ -64,8 +64,8 @@ export default function AccountTab({ setActiveSection }: any) {
                         </div>
                         <button
                             className={`w-full py-2 text-base cursor-pointer font-bold rounded-xl transition-all duration-300 
-                        bg-blue-600 hover:bg-blue-700 text-white shadow-sm 
-                        shadow-blue-600/30`}>
+                        bg-blue-500 hover:bg-blue-700 text-white shadow-sm 
+                        shadow-blue-500/30`}>
                             Save Identity Changes
                         </button>
                     </div>
