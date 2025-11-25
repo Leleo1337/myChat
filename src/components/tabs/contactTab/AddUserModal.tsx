@@ -41,7 +41,7 @@ export default function AddUserModal({ setModalOpen }: any) {
                         <div className="flex items-center gap-2">
                             <UserPlus size={28} />
                             <h1 className="text-xl font-semibold text-gray-800 sm:text-2xl dark:text-slate-100">
-                                Add new contact
+                                New contact
                             </h1>
                         </div>
                         <div>

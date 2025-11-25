@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ChatWindow from "../../../components/chat/ChatWindow";
 import { useParams } from "react-router";
-import UserSection from "../../../components/tabs/userTab/UserSection";
+import ContactSection from "../../../components/tabs/contactTab/ContactSection";
 
 export default function UserContent() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -19,11 +19,11 @@ export default function UserContent() {
         <>
             {!activeChat ? (
                 <div className="flex-1 lg:hidden">
-                    <UserSection />
+                    <ContactSection />
                 </div>
             ) : isMobile ? (
                 <div className="flex-1 lg:hidden">
-                    <UserSection />
+                    <ContactSection />
                 </div>
             ) : (
                 <div className="flex-1 lg:hidden">
@@ -32,7 +32,7 @@ export default function UserContent() {
             )}
 
             <div className="hidden w-full h-full lg:flex lg:flex-row">
-                <UserSection />
+                <ContactSection />
                 <ChatWindow activeChat={activeChat} />
             </div>
         </>

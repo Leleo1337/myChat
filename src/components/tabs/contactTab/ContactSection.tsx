@@ -4,7 +4,7 @@ import Avatar from "react-avatar";
 import { useState } from "react";
 import AddUserModal from "./AddUserModal";
 
-export default function UserSection() {
+export default function ContactSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -31,7 +31,7 @@ export default function UserSection() {
                                 <div className="p-2 text-white bg-blue-500 rounded-full">
                                     <UserPlus />
                                 </div>
-                                Adicionar novo contato
+                                New contact
                             </button>
                         </div>
                     </div>
