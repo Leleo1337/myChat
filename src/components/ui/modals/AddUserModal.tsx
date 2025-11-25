@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 export default function AddUserModal({ setModalOpen }: any) {
     const [show, setShow] = useState(false);
 
-    useEffect(() => {
-        setTimeout(() => setShow(true), 10);
-    }, []);
-
     const handleClose = () => {
         setShow(false);
         setTimeout(() => setModalOpen(false), 300);
     };
+    
+    useEffect(() => {
+        setTimeout(() => setShow(true), 10);
+    }, []);
+
     return (
         <>
             <div
