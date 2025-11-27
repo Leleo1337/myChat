@@ -4,10 +4,6 @@ import { useEffect, useState } from "react";
 
 export default function AppearanceTab({ setActiveSection }: any) {
     const [currentTheme, setCurrentTheme] = useState(getTheme());
-    useEffect(() => {
-        const initialTheme = getTheme() || "light";
-        setCurrentTheme(initialTheme);
-    }, []);
 
     function handleThemeChange(e: React.ChangeEvent<HTMLInputElement>) {
         const isChecked = e.target.checked;
@@ -18,6 +14,12 @@ export default function AppearanceTab({ setActiveSection }: any) {
 
         console.log("disabled: ", currentTheme);
     }
+
+    useEffect(() => {
+        const initialTheme = getTheme() || "light";
+        setCurrentTheme(initialTheme);
+    }, []);
+    
     return (
         <>
             <div className="p-5 transition-colors border border-gray-300 shadow-md bg-gray-50 dark:bg-gray-900 dark:border-slate-800 rounded-2xl">
