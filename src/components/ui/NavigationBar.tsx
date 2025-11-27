@@ -27,7 +27,7 @@ export default function NavigationBar({ activateTab }: any) {
 
         setActiveTab({
             message: tab === "message",
-            user: tab === "user",
+            user: tab === "contact",
             phone: tab === "phone",
             settings: tab === "settings",
         });
@@ -64,7 +64,7 @@ export default function NavigationBar({ activateTab }: any) {
                         <MessageCircleIcon className="w-6 h-6" />
                     </div>
                     <div
-                        onClick={() => handleTabActivation("user")}
+                        onClick={() => handleTabActivation("contact")}
                         className={`${
                             activeTab.user
                                 ? activeTabStyles
