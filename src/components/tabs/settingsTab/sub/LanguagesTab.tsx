@@ -1,11 +1,18 @@
 import { Check, ChevronLeft, Languages } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function LanguagesTab({ setActiveSection }: any) {
-    const [activeLang, setActiveLang] = useState<"portugues" | "english">("portugues");
+    const [activeLang, setActiveLang] = useState<"portugues" | "english">(
+        (localStorage.getItem("lang") as "portugues" | "english") || "english"
+    );
+
+    const { setLanguage, changeActiveLanguage } = useContext(LanguageContext);
 
     useEffect(() => {
         localStorage.setItem("lang", activeLang);
+        setLanguage(activeLang);
+        changeActiveLanguage();
     }, [activeLang]);
 
     return (
