@@ -12,7 +12,7 @@ export default function MessageContent() {
                     <MessageSection />
                 </div>
             ) : (
-                <div className="flex-1 w-full h-full lg:hidden sm:pl-32 dark:bg-slate-800/30">
+                <div className="flex-1 w-full h-full lg:hidden sm:pl-30 dark:bg-slate-800/30">
                     <ChatWindow activeChat={activeChat} />
                 </div>
             )}
