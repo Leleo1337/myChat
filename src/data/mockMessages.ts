@@ -37,7 +37,36 @@ export const mockMessages = [
         content: "Não vi nada, o que rolou?",
         timestamp: "2025-11-10T19:23:40Z",
     },
-
+    {
+        id: 5,
+        sender: "them",
+        content: "Bom dia!",
+        timestamp: "2025-11-13T08:30:12Z",
+    },
+    {
+        id: 5,
+        sender: "them",
+        content: "Bom dia!",
+        timestamp: "2025-11-13T08:30:12Z",
+    },
+    {
+        id: 5,
+        sender: "them",
+        content: "Bom dia!",
+        timestamp: "2025-11-13T08:30:12Z",
+    },
+    {
+        id: 5,
+        sender: "them",
+        content: "Bom dia!",
+        timestamp: "2025-11-13T08:30:12Z",
+    },
+    {
+        id: 5,
+        sender: "them",
+        content: "Bom dia!",
+        timestamp: "2025-11-13T08:30:12Z",
+    },
     {
         id: 5,
         sender: "them",
@@ -74,5 +103,5 @@ export const mockMessages = [
         sender: "me",
         content: "Ainda não, mas tô perto.",
         timestamp: "2025-11-14T10:14:05Z",
-    }
+    },
 ];
