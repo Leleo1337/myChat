@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import MessageSection from "../../../components/tabs/messageTab/MessageSection";
-import ChatWindow from "../../../components/chat/ChatWindow";
+import ChatWindow from "../ChatWindow";
 
 export default function MessageContent() {
     const { id: activeChat } = useParams();

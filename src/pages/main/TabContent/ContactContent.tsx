@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ChatWindow from "../../../components/chat/ChatWindow";
+import ChatWindow from "../ChatWindow";
 import { useParams } from "react-router";
 import ContactSection from "../../../components/tabs/contactTab/ContactSection";
 
