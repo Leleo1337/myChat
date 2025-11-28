@@ -69,7 +69,7 @@
             "title": "Privacidade e Segurança",
             "twoFactorAuthTitle": "Autenticação de Dois Fatores (2FA)",
             "statusText": "Status",
-            "buttonText": "Gerenciar 2FA",
+            "buttonText": "Ativar 2FA",
             "noteText": "Com a 2FA ativa, um código de segurança será enviado ao seu e-mail a cada novo login.",
             "importantNoteTitle": "Observação Importante",
             "importantNote": "Este aplicativo é um projeto de estudo e desenvolvimento sem fins lucrativos. Ele foi criado exclusivamente para fins de aprendizado e demonstração de habilidades técnicas.",
