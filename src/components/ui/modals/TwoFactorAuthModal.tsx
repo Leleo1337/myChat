@@ -77,8 +77,8 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[0]}
                             onChange={(e) => handleChange(0, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
@@ -91,8 +91,8 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[1]}
                             onChange={(e) => handleChange(1, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
@@ -105,8 +105,8 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[2]}
                             onChange={(e) => handleChange(2, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
@@ -119,8 +119,8 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[3]}
                             onChange={(e) => handleChange(3, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
@@ -133,8 +133,8 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[4]}
                             onChange={(e) => handleChange(4, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
@@ -147,13 +147,13 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                             value={code[5]}
                             onChange={(e) => handleChange(5, e.target.value)}
                             className="w-[80%] aspect-square text-3xl text-center 
-                       bg-slate-800 text-slate-100 
-                       border-none border-b-2 border-slate-700 rounded-md
+                       dark:bg-slate-800 bg-gray-200 text-slate-100 
+                        border-b-2 dark:border-slate-700 border-slate-500 rounded-md
                        transition-colors duration-200
                        focus:border-blue-500 focus:outline-none 
                        focus:ring-0"></input>
                     </div>
-                    <button className="w-full py-2 mt-4 font-semibold bg-blue-500 rounded-md cursor-pointer hover:bg-blue-600">
+                    <button className="w-full py-2 mt-4 font-semibold bg-blue-500 rounded-md cursor-pointer hover:bg-blue-600 text-white">
                         {languageData.modals?.twoFactorAuthModal.button}
                     </button>
                 </div>
