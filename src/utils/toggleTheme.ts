@@ -1,5 +1,12 @@
-export function getTheme() {
-    return localStorage.getItem("theme");
+import type { ThemeMode } from "../types/globals/ThemeMode";
+
+export function getTheme(): ThemeMode {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme === "dark" || storedTheme == "light") {
+        return storedTheme;
+    }
+    return "light";
 }
 
 export function setTheme(theme: string) {
