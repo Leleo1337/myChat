@@ -10,7 +10,7 @@ export default function ChatBody() {
         <div className="flex flex-col h-full max-h-full py-4 pl-4 pr-0 overflow-y-scroll">
             <div className="flex flex-col flex-1 gap-4 pb-4 pr-2 overflow-y-auto">
                 <div className="flex items-center justify-center p-8 my-8 text-center border border-gray-300 rounded-xl dark:border-gray-800">
-                    <p>{languageData.chatsSection?.startOfConversation}</p>
+                    <p>{languageData.mainApp.chatsSection?.startOfConversation}</p>
                 </div>
                 {mockMessages.map((msg) => (
                     <MessageBubble key={msg.id} sender={msg.sender} timestamp={msg.timestamp} content={msg.content} />

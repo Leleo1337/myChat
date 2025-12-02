@@ -34,7 +34,7 @@ export default function AppearanceTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2">
                         <Palette className="text-blue-500" size={24} />
                         <span className="font-semibold text-gray-800 dark:text-gray-100">
-                            {languageData.settingsSection.appearanceSubTab?.title}
+                            {languageData.mainApp.settingsSection.appearanceSubTab?.title}
                         </span>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function AppearanceTab({ setActiveSection }: any) {
                             <div className="absolute top-0 left-0 transition-transform bg-white rounded-full shadow-md w-7 h-7 dark:bg-gray-200 peer-checked:translate-x-7"></div>
                         </div>
                         <span className="font-medium text-gray-700 dark:text-gray-200">
-                            {languageData.settingsSection.appearanceSubTab?.darkModeButton}
+                            {languageData.mainApp.settingsSection.appearanceSubTab?.darkModeButton}
                         </span>
                     </label>
                 </div>

@@ -20,7 +20,7 @@ export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2">
                         <Scale className="text-blue-500" size={24} />
                         <span className="font-semibold text-gray-800 dark:text-gray-100">
-                            {languageData.settingsSection.privacyAndSecuritySubTab?.title}
+                            {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.title}
                         </span>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
                         <div className="flex items-center gap-2 pb-2 text-base font-semibold border-b border-gray-300 dark:border-slate-800">
                             <Shield className="text-blue-500" />
                             <h2 className="text-gray-800 dark:text-gray-200">
-                                {languageData.settingsSection.privacyAndSecuritySubTab?.twoFactorAuthTitle}
+                                {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.twoFactorAuthTitle}
                             </h2>
                         </div>
                         <div className="p-4 mt-4 bg-gray-100 border border-gray-300 rounded-md dark:bg-slate-800/50 dark:border-slate-800">
@@ -48,33 +48,33 @@ export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
                                 <button
                                     onClick={() => setTwoFactorModalOpen(!twoFactorModalOpen)}
                                     className="text-sm bg-blue-500 px-4 py-1.5 rounded-xl cursor-pointer hover:bg-blue-600 font-semibold text-white">
-                                    {languageData.settingsSection.privacyAndSecuritySubTab?.buttonText}
+                                    {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.buttonText}
                                 </button>
                             </div>
                         </div>
                         <p className="py-2 text-xs text-gray-700 dark:text-gray-400">
-                            {languageData.settingsSection.privacyAndSecuritySubTab?.noteText}
+                            {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.noteText}
                         </p>
                     </div>
                     <div className="pt-4">
                         <div className="flex gap-2 pb-2 text-base font-semibold border-b border-gray-300 dark:border-slate-800">
                             <Scale className="text-blue-500" />
                             <h2 className="text-gray-800 dark:text-gray-200">
-                                {languageData.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerTitle}
+                                {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerTitle}
                             </h2>
                         </div>
                         <div>
                             <h3 className="pt-2 font-bold text-gray-700 dark:text-gray-200">
-                                {languageData.settingsSection.privacyAndSecuritySubTab?.importantNoteTitle}
+                                {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.importantNoteTitle}
                             </h3>
                             <p className="py-2 text-sm text-gray-600 dark:text-gray-200">
                                 {" "}
-                                {languageData.settingsSection.privacyAndSecuritySubTab?.importantNote}
+                                {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.importantNote}
                             </p>
                             <div className="pt-4 text-red-500">
                                 <p className="text-sm font-semibold">
-                                    <span className="font-bold ">{languageData.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerTitle}: </span>
-                                    {languageData.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerText}
+                                    <span className="font-bold ">{languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerTitle}: </span>
+                                    {languageData.mainApp.settingsSection.privacyAndSecuritySubTab?.securityDisclaimerText}
                                 </p>
                             </div>
                         </div>

@@ -26,7 +26,7 @@ export default function LanguagesTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2">
                         <Languages className="text-blue-500" size={24} />
                         <span className="font-semibold text-gray-800 dark:text-gray-100">
-                            {languageData.settingsSection.languagesSubTab?.title}
+                            {languageData.mainApp.settingsSection.languagesSubTab?.title}
                         </span>
                     </div>
                 </div>

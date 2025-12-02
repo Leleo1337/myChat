@@ -22,7 +22,7 @@ export default function AccountTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2">
                         <LockKeyhole className="text-blue-500" size={24} />
                         <span className="font-semibold text-gray-800 dark:text-gray-200">
-                            {languageData.settingsSection?.accountSubTab.title}
+                            {languageData.mainApp.settingsSection?.accountSubTab.title}
                         </span>
                     </div>
                 </div>
@@ -30,13 +30,13 @@ export default function AccountTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2 pb-2 border-b border-gray-300 dark:border-slate-800">
                         <User size={24} className="text-blue-500" />
                         <p className="text-base font-semibold tracking-wide text-gray-700 dark:text-gray-200">
-                            {languageData.settingsSection?.accountSubTab.userIdentitySection.sectionTitle}
+                            {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.sectionTitle}
                         </p>
                     </div>
                     <div className="flex flex-col gap-4">
                         <div>
                             <label htmlFor="username" className="text-sm text-gray-800 dark:text-gray-200">
-                                {languageData.settingsSection?.accountSubTab.userIdentitySection.usernameLabel}
+                                {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.usernameLabel}
                             </label>
                             <div className="relative">
                                 <input
@@ -52,7 +52,7 @@ export default function AccountTab({ setActiveSection }: any) {
                         </div>
                         <div>
                             <label htmlFor="email" className="text-sm text-gray-800 dark:text-gray-200">
-                                {languageData.settingsSection?.accountSubTab.userIdentitySection.emailLabel}
+                                {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.emailLabel}
                             </label>
                             <div className="relative">
                                 <input
@@ -61,7 +61,7 @@ export default function AccountTab({ setActiveSection }: any) {
                                     id="email"
                                     className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
                                     placeholder={
-                                        languageData.settingsSection?.accountSubTab.userIdentitySection
+                                        languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection
                                             .emailInputPlaceholder
                                     }
                                     value={"leandrolegal@gmail.com"}
@@ -73,7 +73,7 @@ export default function AccountTab({ setActiveSection }: any) {
                             className={`w-full py-2 text-base cursor-pointer font-bold rounded-xl transition-all duration-300 
                         bg-blue-500 hover:bg-blue-700 text-white shadow-sm 
                         shadow-blue-500/30`}>
-                            {languageData.settingsSection?.accountSubTab.userIdentitySection.saveIdentityChangesButton}
+                            {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.saveIdentityChangesButton}
                         </button>
                     </div>
                 </div>
@@ -82,14 +82,14 @@ export default function AccountTab({ setActiveSection }: any) {
                         <div className="flex items-center gap-2 pb-2 border-b border-gray-300 dark:border-slate-800">
                             <Key size={24} className="text-blue-500" />
                             <p className="text-base font-semibold tracking-wide text-gray-700 dark:text-gray-200">
-                                {languageData.settingsSection?.accountSubTab.changePasswordSection.sectionTitle}
+                                {languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection.sectionTitle}
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 pb-4 border-b border-gray-300 dark:border-slate-800">
                             <div>
                                 <label htmlFor="currentPassword" className="text-sm text-gray-800 dark:text-gray-200">
                                     {
-                                        languageData.settingsSection?.accountSubTab.changePasswordSection
+                                        languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection
                                             .currentPasswordLabel
                                     }
                                 </label>
@@ -125,7 +125,7 @@ export default function AccountTab({ setActiveSection }: any) {
                             </div>
                             <div>
                                 <label htmlFor="newPassword" className="text-sm text-gray-800 dark:text-gray-200">
-                                    {languageData.settingsSection?.accountSubTab.changePasswordSection.newPasswordLabel}
+                                    {languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection.newPasswordLabel}
                                 </label>
                                 <div className="relative">
                                     <input
@@ -160,7 +160,7 @@ export default function AccountTab({ setActiveSection }: any) {
                             <div>
                                 <label htmlFor="confirmNew" className="text-sm text-gray-800 dark:text-gray-200">
                                     {
-                                        languageData.settingsSection?.accountSubTab.changePasswordSection
+                                        languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection
                                             .confirmPasswordLabel
                                     }
                                 </label>
@@ -199,12 +199,12 @@ export default function AccountTab({ setActiveSection }: any) {
                                 className={`w-full py-2 text-base cursor-pointer font-bold rounded-xl transition-all duration-300 
                         bg-green-600 hover:bg-green-700 text-white shadow-sm 
                         shadow-green-600/30`}>
-                                {languageData.settingsSection?.accountSubTab.changePasswordSection.updatePasswordButton}
+                                {languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection.updatePasswordButton}
                             </button>
                         </div>
                         <button className="flex items-center justify-center w-full gap-2 py-2 font-semibold text-red-500 border border-red-500 rounded-md cursor-pointer hover:bg-red-500 hover:text-white">
                             <LogOut />
-                            <span>{languageData.settingsSection?.accountSubTab.logOutButton}</span>
+                            <span>{languageData.mainApp.settingsSection?.accountSubTab.logOutButton}</span>
                         </button>
                     </div>
                 </div>

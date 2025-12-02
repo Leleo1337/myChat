@@ -18,7 +18,7 @@ export default function ProfileTab({ setActiveSection }: any) {
                     <div className="flex items-center gap-2">
                         <User className="text-blue-500" size={24} />
                         <span className="font-semibold text-gray-800 dark:text-gray-100">
-                            {languageData.settingsSection.profileSubTab.title}
+                            {languageData.mainApp.settingsSection.profileSubTab.title}
                         </span>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export default function ProfileTab({ setActiveSection }: any) {
                         />
                         <div className="flex flex-col w-full gap-0.5">
                             <label htmlFor="iname" className="text-sm text-gray-800 dark:text-slate-50">
-                                {languageData.settingsSection.profileSubTab.nameLabel}
+                                {languageData.mainApp.settingsSection.profileSubTab.nameLabel}
                             </label>
                             <input
                                 type="text"
@@ -42,13 +42,13 @@ export default function ProfileTab({ setActiveSection }: any) {
                             />
                             <div className="pt-1 pb-4 text-sm font-semibold text-blue-500">@leandrolegal123</div>
                             <p className="p-2 mt-2 text-sm text-gray-600 border border-gray-300 dark:text-slate-300 rounded-xl dark:border-slate-800">
-                                {languageData.settingsSection.profileSubTab.textBox}
+                                {languageData.mainApp.settingsSection.profileSubTab.textBox}
                             </p>
                         </div>
                     </div>
                     <div className="w-full">
                         <label htmlFor="iabout" className="text-sm text-gray-800 dark:text-slate-50">
-                            {languageData.settingsSection.profileSubTab.aboutLabel}
+                            {languageData.mainApp.settingsSection.profileSubTab.aboutLabel}
                         </label>
                         <textarea
                             name="iabout"
@@ -58,7 +58,7 @@ export default function ProfileTab({ setActiveSection }: any) {
                     </div>
                     <div className="flex justify-end">
                         <button className="p-8 py-2 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md cursor-pointer active:bg-blue-500/20 active:outline-0 hover:text-blue-500 hover:border-blue-500 hover:ring-2 hover:ring-blue-500/30 hover:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500">
-                            {languageData.settingsSection.profileSubTab.buttonText}
+                            {languageData.mainApp.settingsSection.profileSubTab.buttonText}
                         </button>
                     </div>
                 </div>
