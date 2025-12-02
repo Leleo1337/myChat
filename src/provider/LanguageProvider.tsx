@@ -7,18 +7,15 @@ export default function LanguageProvider({ children }: any) {
     const [language, setLanguage] = useState<"portugues" | "english">("english");
     const [languageData, setLanguageData] = useState(en);
 
-    function changeActiveLanguage() {
-        const currentLang = localStorage.getItem("lang");
-        if (currentLang) {
-            setLanguageData(getLanguageData(currentLang));
-        }
-    }
-
     function getLanguageData(lang: string) {
         if (lang == "portugues") return pt;
         if (lang == "english") return en;
         return en;
     }
+    
+    useEffect(() => {
+        setLanguageData(getLanguageData(language));
+    }, [language]);
 
     useEffect(() => {
         const currentLang = localStorage.getItem("lang");
@@ -31,8 +28,6 @@ export default function LanguageProvider({ children }: any) {
     }, []);
 
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, languageData, changeActiveLanguage }}>
-            {children}
-        </LanguageContext.Provider>
+        <LanguageContext.Provider value={{ language, setLanguage, languageData }}>{children}</LanguageContext.Provider>
     );
 }
