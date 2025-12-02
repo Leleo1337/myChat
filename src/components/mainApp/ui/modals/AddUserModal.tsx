@@ -44,12 +44,12 @@ export default function AddUserModal({ setModalOpen }: any) {
                         <div className="flex items-center gap-2">
                             <UserPlus size={28} />
                             <h1 className="text-xl font-semibold text-gray-800 sm:text-2xl dark:text-slate-100">
-                                {languageData.modals?.addUserModal.title}
+                                {languageData.mainApp.modals?.addUserModal.title}
                             </h1>
                         </div>
                         <div>
                             <p className="text-sm text-gray-400 dark:text-slate-400">
-                                {languageData.modals?.addUserModal.description}
+                                {languageData.mainApp.modals?.addUserModal.description}
                             </p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function AddUserModal({ setModalOpen }: any) {
                         </div>
                         <div className="py-8">
                             <p className="text-center text-gray-800 dark:text-slate-100">
-                                {languageData.modals?.addUserModal.emptyList}
+                                {languageData.mainApp.modals?.addUserModal.emptyList}
                             </p>
                         </div>
                     </div>

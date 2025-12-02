@@ -62,10 +62,10 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                 </div>
                 <div className="pt-4">
                     <h1 className="text-xl font-semibold text-gray-800 sm:text-2xl dark:text-slate-100">
-                        {languageData.modals?.twoFactorAuthModal.title}
+                        {languageData.mainApp.modals?.twoFactorAuthModal.title}
                     </h1>
                     <div className="pt-2 text-sm text-gray-400">
-                        {languageData.modals?.twoFactorAuthModal.description}
+                        {languageData.mainApp.modals?.twoFactorAuthModal.description}
                     </div>
                     <div className="grid grid-cols-6 pt-2">
                         <input
@@ -154,7 +154,7 @@ export default function TwoFactorAuthModal({ setModalOpen }: any) {
                        focus:ring-0"></input>
                     </div>
                     <button className="w-full py-2 mt-4 font-semibold bg-blue-500 rounded-md cursor-pointer hover:bg-blue-600 text-white">
-                        {languageData.modals?.twoFactorAuthModal.buttonText}
+                        {languageData.mainApp.modals?.twoFactorAuthModal.buttonText}
                     </button>
                 </div>
             </div>
