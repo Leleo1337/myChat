@@ -1,7 +1,7 @@
 import { ChevronLeft, Scale, Shield } from "lucide-react";
 import { useContext, useState } from "react";
 import TwoFactorAuthModal from "../../../ui/modals/TwoFactorAuthModal";
-import LanguageContext from "../../../../context/LanguageContext";
+import LanguageContext from "../../../../../context/LanguageContext";
 
 export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
     const [twoFactorModalOpen, setTwoFactorModalOpen] = useState(false);

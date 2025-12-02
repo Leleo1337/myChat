@@ -1,7 +1,7 @@
 import { ChevronLeft, User } from "lucide-react";
-import testProfilePicture from "../../../../assets/testProfilePicture.jpg";
+import testProfilePicture from "../../../../../assets/testProfilePicture.jpg";
 import { useContext } from "react";
-import LanguageContext from "../../../../context/LanguageContext";
+import LanguageContext from "../../../../../context/LanguageContext";
 
 export default function ProfileTab({ setActiveSection }: any) {
     const { languageData } = useContext(LanguageContext);

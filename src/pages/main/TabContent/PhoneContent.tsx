@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import ChatWindow from "../ChatWindow";
 import { useEffect, useState } from "react";
-import PhoneSection from "../../../components/tabs/phoneTab/PhoneSection";
+import PhoneSection from "../../../components/mainApp/tabs/phoneTab/PhoneSection";
 
 export default function PhoneContent() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);

@@ -1,8 +1,8 @@
-import testProfilePicture from "../../assets/testProfilePicture.jpg";
+import testProfilePicture from "../../../assets/testProfilePicture.jpg";
 import { MessageCircleIcon, PhoneIcon, Settings, UsersIcon } from "lucide-react";
 import { useState } from "react";
-import myChatLightThemeLogo from "../../assets/myChat_lightTheme_LOGO.png";
-import myChatDarkThemeLogo from "../../assets/myChat_darkTheme_LOGO.png";
+import myChatLightThemeLogo from "../../../assets/myChat_lightTheme_LOGO.png";
+import myChatDarkThemeLogo from "../../../assets/myChat_darkTheme_LOGO.png";
 import { useNavigate } from "react-router";
 
 type tabTypes = {

@@ -1,4 +1,4 @@
-import dateFormatter from "../../utils/dateFormatter";
+import dateFormatter from "../../../utils/dateFormatter";
 
 export default function MessageBubble({ sender, content, timestamp }: any) {
     return (

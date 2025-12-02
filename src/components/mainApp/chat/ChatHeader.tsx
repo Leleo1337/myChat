@@ -1,5 +1,5 @@
 import { Phone, Search, Video } from "lucide-react";
-import testProfilePicture from "../../assets/testProfilePicture.jpg";
+import testProfilePicture from "../../../assets/testProfilePicture.jpg";
 import { useRef, useState } from "react";
 import ProfileDropdown from "./ProfileDropdown";
 import SearchBar from "./SearchBar";

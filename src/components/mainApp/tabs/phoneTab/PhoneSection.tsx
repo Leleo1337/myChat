@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 import { AlertTriangle } from "lucide-react";
 
 export default function PhoneSection() {

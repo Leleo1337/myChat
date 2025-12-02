@@ -1,6 +1,6 @@
-import ChatHeader from "../../components/chat/ChatHeader";
-import ChatBody from "../../components/chat/ChatBody";
-import EmptyChat from "../../components/chat/EmptyChat";
+import ChatHeader from "../../components/mainApp/chat/ChatHeader";
+import ChatBody from "../../components/mainApp/chat/ChatBody";
+import EmptyChat from "../../components/mainApp/chat/EmptyChat";
 
 export default function ChatWindow({ activeChat }: any) {
     return (

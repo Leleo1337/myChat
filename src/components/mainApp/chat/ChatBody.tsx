@@ -1,8 +1,8 @@
 import { Send } from "lucide-react";
-import { mockMessages } from "../../data/mockMessages";
+import { mockMessages } from "../../../data/mockMessages";
 import MessageBubble from "./MessageBubble";
 import { useContext } from "react";
-import LanguageContext from "../../context/LanguageContext";
+import LanguageContext from "../../../context/LanguageContext";
 
 export default function ChatBody() {
     const { languageData } = useContext(LanguageContext);

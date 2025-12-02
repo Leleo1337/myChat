@@ -1,6 +1,6 @@
 import { X } from "lucide-react";
 import { useContext, useEffect, useRef, useState } from "react";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function TwoFactorAuthModal({ setModalOpen }: any) {
     const [code, setCode] = useState(["", "", "", "", "", ""]);

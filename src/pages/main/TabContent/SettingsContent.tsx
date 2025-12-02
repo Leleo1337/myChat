@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import ChatWindow from "../ChatWindow";
 import { useEffect, useState } from "react";
-import SettingsSection from "../../../components/tabs/settingsTab/SettingsSection";
+import SettingsSection from "../../../components/mainApp/tabs/settingsTab/SettingsSection";
 
 export default function SettingsContent() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);

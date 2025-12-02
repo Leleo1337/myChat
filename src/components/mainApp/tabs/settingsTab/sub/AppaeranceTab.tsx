@@ -1,7 +1,7 @@
 import { ChevronLeft, Palette } from "lucide-react";
-import { getTheme, setTheme } from "../../../../utils/toggleTheme";
+import { getTheme, setTheme } from "../../../../../utils/toggleTheme";
 import { useContext, useEffect, useState } from "react";
-import LanguageContext from "../../../../context/LanguageContext";
+import LanguageContext from "../../../../../context/LanguageContext";
 
 export default function AppearanceTab({ setActiveSection }: any) {
     const [currentTheme, setCurrentTheme] = useState(getTheme());

@@ -1,6 +1,6 @@
 import { CloudFogIcon } from "lucide-react";
 import { useContext } from "react";
-import LanguageContext from "../../context/LanguageContext";
+import LanguageContext from "../../../context/LanguageContext";
 
 export default function EmptyChat() {
     const { languageData } = useContext(LanguageContext);

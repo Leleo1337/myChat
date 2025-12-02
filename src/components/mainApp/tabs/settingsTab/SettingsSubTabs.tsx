@@ -1,6 +1,6 @@
 import { ChevronRight, Languages, LockKeyhole, Palette, User } from "lucide-react";
 import { useContext } from "react";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function SettingsSubTabs({ setActiveSection }: any) {
     const { languageData } = useContext(LanguageContext);

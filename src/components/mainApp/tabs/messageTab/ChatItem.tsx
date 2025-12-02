@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import testProfilePicture from "../../../assets/testProfilePicture.jpg";
+import testProfilePicture from "../../../../assets/testProfilePicture.jpg";
 
 export default function ChatItem({ id }: any) {
     return (

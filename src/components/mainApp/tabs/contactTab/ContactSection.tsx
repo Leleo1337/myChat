@@ -1,9 +1,9 @@
 import { Search, UserPlus } from "lucide-react";
-import { mockContacts } from "../../../data/mockContacts";
+import { mockContacts } from "../../../../data/mockContacts";
 import Avatar from "react-avatar";
 import { useContext, useState } from "react";
 import AddUserModal from "../../ui/modals/AddUserModal";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function ContactSection() {
     const [isModalOpen, setIsModalOpen] = useState(false);

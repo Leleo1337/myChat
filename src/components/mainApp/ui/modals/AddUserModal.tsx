@@ -1,6 +1,6 @@
 import { Search, UserPlus, X } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function AddUserModal({ setModalOpen }: any) {
     const [show, setShow] = useState(false);

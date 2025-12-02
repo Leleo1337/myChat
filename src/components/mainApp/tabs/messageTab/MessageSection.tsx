@@ -1,7 +1,7 @@
 import { Box, Search } from "lucide-react";
 import ChatItem from "./ChatItem";
 import { useContext } from "react";
-import LanguageContext from "../../../context/LanguageContext";
+import LanguageContext from "../../../../context/LanguageContext";
 
 export default function MessageSection() {
     const { languageData } = useContext(LanguageContext);

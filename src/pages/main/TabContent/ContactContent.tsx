@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ChatWindow from "../ChatWindow";
 import { useParams } from "react-router";
-import ContactSection from "../../../components/tabs/contactTab/ContactSection";
+import ContactSection from "../../../components/mainApp/tabs/contactTab/ContactSection";
 
 export default function ContactContent() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);

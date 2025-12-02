@@ -1,6 +1,6 @@
 import { Check, ChevronLeft, Languages } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
-import LanguageContext from "../../../../context/LanguageContext";
+import LanguageContext from "../../../../../context/LanguageContext";
 
 export default function LanguagesTab({ setActiveSection }: any) {
     const [activeLang, setActiveLang] = useState<"portugues" | "english">(

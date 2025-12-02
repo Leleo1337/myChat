@@ -1,6 +1,6 @@
 import { ChevronLeft, Eye, EyeOff, Key, LockKeyhole, LogOut, Mail, User } from "lucide-react";
 import { useContext, useState } from "react";
-import LanguageContext from "../../../../context/LanguageContext";
+import LanguageContext from "../../../../../context/LanguageContext";
 
 export default function AccountTab({ setActiveSection }: any) {
     const [passwordsInputsTypes, setPasswordsInputsTypes] = useState({

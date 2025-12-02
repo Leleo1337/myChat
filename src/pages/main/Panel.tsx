@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavigationBar from "../../components/ui/NavigationBar";
+import NavigationBar from "../../components/mainApp/ui/NavigationBar";
 import MessageContent from "./TabContent/MessageContent";
 import SettingsContent from "./TabContent/SettingsContent";
 import ContactContent from "./TabContent/ContactContent";
