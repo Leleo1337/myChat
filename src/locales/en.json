@@ -1,92 +1,96 @@
 {
-    "chatsSection": {
-        "startOfConversation": "This is the start of your conversation",
-        "emptyChat": {
-            "title": "Select a conversation to start",
-            "buttonText": "Search contacts"
-        }
-    },
-    "messageSection": {
-        "title": "Messages",
-        "inputPlaceholder": "Search conversations",
-        "archivedButton": "Archived",
-        "pinnedTitle": "Pinned Chats",
-        "allChatsTitle": "All Chats"
-    },
-    "contactsSection": {
-        "title": "Contacts",
-        "inputPlaceholder": "Search contacts",
-        "newContactButton": "New Contact",
-        "myContactsTitle": "My Contacts"
-    },
-    "phoneSection": {
-        "warningTitle": "Under Development",
-        "warningMessage": "This feature is currently being developed. Check back soon for updates!"
-    },
-    "settingsSection": {
-        "mainTab": {
-            "title": "Settings",
-            "appearanceButton": "Appearance",
-            "profileButton": "Profile",
-            "languagesButton": "Language",
-            "accountButton": "Account",
-            "privacyAndSecurityButton": "Privacy & Security"
+    "landingPage": {},
+    "auth": {},
+    "mainApp": {
+        "chatsSection": {
+            "startOfConversation": "This is the start of your conversation",
+            "emptyChat": {
+                "title": "Select a conversation to start",
+                "buttonText": "Search contacts"
+            }
         },
-        "appearanceSubTab": {
-            "title": "Appearance",
-            "darkModeButton": "Dark Mode"
+        "messageSection": {
+            "title": "Messages",
+            "inputPlaceholder": "Search conversations",
+            "archivedButton": "Archived",
+            "pinnedTitle": "Pinned Chats",
+            "allChatsTitle": "All Chats"
         },
-        "profileSubTab": {
-            "title": "Profile",
-            "nameLabel": "Name",
-            "textBox": "Your name will be visible to your contacts.",
-            "aboutLabel": "About",
-            "buttonText": "Save"
+        "contactsSection": {
+            "title": "Contacts",
+            "inputPlaceholder": "Search contacts",
+            "newContactButton": "New Contact",
+            "myContactsTitle": "My Contacts"
         },
-        "languagesSubTab": {
-            "title": "Language"
+        "phoneSection": {
+            "warningTitle": "Under Development",
+            "warningMessage": "This feature is currently being developed. Check back soon for updates!"
         },
-        "accountSubTab": {
-            "title": "Account",
-            "userIdentitySection": {
-                "sectionTitle": "User Identity",
-                "usernameLabel": "Username (Unique ID)",
-                "usernameInputPlaceholder": "Username",
-                "emailLabel": "Email Address",
-                "emailInputPlaceholder": "Email",
-                "saveIdentityChangesButton": "Save Identity Changes"
+        "settingsSection": {
+            "mainTab": {
+                "title": "Settings",
+                "appearanceButton": "Appearance",
+                "profileButton": "Profile",
+                "languagesButton": "Language",
+                "accountButton": "Account",
+                "privacyAndSecurityButton": "Privacy & Security"
             },
-            "changePasswordSection": {
-                "sectionTitle": "Change Password",
-                "currentPasswordLabel": "Current Password",
-                "newPasswordLabel": "New Password",
-                "confirmPasswordLabel": "Confirm New Password",
-                "updatePasswordButton": "Update Password"
+            "appearanceSubTab": {
+                "title": "Appearance",
+                "darkModeButton": "Dark Mode"
             },
-            "logOutButton": "Log Out"
+            "profileSubTab": {
+                "title": "Profile",
+                "nameLabel": "Name",
+                "textBox": "Your name will be visible to your contacts.",
+                "aboutLabel": "About",
+                "buttonText": "Save"
+            },
+            "languagesSubTab": {
+                "title": "Language"
+            },
+            "accountSubTab": {
+                "title": "Account",
+                "userIdentitySection": {
+                    "sectionTitle": "User Identity",
+                    "usernameLabel": "Username (Unique ID)",
+                    "usernameInputPlaceholder": "Username",
+                    "emailLabel": "Email Address",
+                    "emailInputPlaceholder": "Email",
+                    "saveIdentityChangesButton": "Save Identity Changes"
+                },
+                "changePasswordSection": {
+                    "sectionTitle": "Change Password",
+                    "currentPasswordLabel": "Current Password",
+                    "newPasswordLabel": "New Password",
+                    "confirmPasswordLabel": "Confirm New Password",
+                    "updatePasswordButton": "Update Password"
+                },
+                "logOutButton": "Log Out"
+            },
+            "privacyAndSecuritySubTab": {
+                "title": "Privacy & Security",
+                "twoFactorAuthTitle": "Two-Factor Authentication (2FA)",
+                "statusText": "Status",
+                "buttonText": "Enable 2FA",
+                "noteText": "With 2FA active, a security code will be sent to your email with every new login.",
+                "importantNoteTitle": "Important Note",
+                "importantNote": "This application is a non-profit study and development project. It was created exclusively for the purpose of learning and demonstrating technical skills.",
+                "securityDisclaimerTitle": "Security Disclaimer",
+                "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Chats may become unintentionally visible or accessible. Use the service and its chat features at your own risk, and **do not enter any personal or sensitive information**."
+            }
         },
-        "privacyAndSecuritySubTab": {
-            "title": "Privacy & Security",
-            "twoFactorAuthTitle": "Two-Factor Authentication (2FA)",
-            "statusText": "Status",
-            "buttonText": "Enable 2FA",
-            "noteText": "With 2FA active, a security code will be sent to your email with every new login.",
-            "importantNoteTitle": "Important Note",
-            "importantNote": "This application is a non-profit study and development project. It was created exclusively for the purpose of learning and demonstrating technical skills.",
-            "securityDisclaimerTitle": "Security Disclaimer",
-            "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Chats may become unintentionally visible or accessible. Use the service and its chat features at your own risk, and **do not enter any personal or sensitive information**."
-        }
-    },
-    "modals": {
-        "addUserModal": {
-            "title": "New Contact",
-            "description": "Search by username to add a new contact.",
-            "emptyList": "Use the search bar above to find users."
-        },
-        "twoFactorAuthModal": {
-            "title": "Activate Two-Factor Authentication (2FA)",
-            "description": "Enter the 6-digit code sent to your registered email address.",
-            "buttonText": "Activate Two-Factor Authentication"
+        "modals": {
+            "addUserModal": {
+                "title": "New Contact",
+                "description": "Search by username to add a new contact.",
+                "emptyList": "Use the search bar above to find users."
+            },
+            "twoFactorAuthModal": {
+                "title": "Activate Two-Factor Authentication (2FA)",
+                "description": "Enter the 6-digit code sent to your registered email address.",
+                "buttonText": "Activate Two-Factor Authentication"
+            }
         }
     }
 }

@@ -1,92 +1,96 @@
 {
-    "chatsSection": {
-        "startOfConversation": "Esse é o começo da sua conversa",
-        "emptyChat": {
-            "title": "Selecione uma conversa para começar",
-            "buttonText": "Pesquisar contatos"
-        }
-    },
-    "messageSection": {
-        "title": "Mensagens",
-        "inputPlaceholder": "Pesquisar conversas",
-        "archivedButton": "Arquivadas",
-        "pinnedTitle": "Conversas Fixadas",
-        "allChatsTitle": "Todas as Conversas"
-    },
-    "contactsSection": {
-        "title": "Contatos",
-        "inputPlaceholder": "Buscar contatos",
-        "newContactButton": "Novo Contato",
-        "myContactsTitle": "Meus Contatos"
-    },
-    "phoneSection": {
-        "warningTitle": "Em Desenvolvimento",
-        "warningMessage": "Esta funcionalidade está sendo desenvolvida no momento. Volte em breve para conferir as novidades!"
-    },
-    "settingsSection": {
-        "mainTab": {
-            "title": "Configurações",
-            "appearanceButton": "Aparência",
-            "profileButton": "Perfil",
-            "languagesButton": "Idioma",
-            "accountButton": "Conta",
-            "privacyAndSecurityButton": "Privacidade e Segurança"
+    "landingPage": {},
+    "auth": {},
+    "mainApp": {
+        "chatsSection": {
+            "startOfConversation": "Esse é o começo da sua conversa",
+            "emptyChat": {
+                "title": "Selecione uma conversa para começar",
+                "buttonText": "Pesquisar contatos"
+            }
         },
-        "appearanceSubTab": {
-            "title": "Aparência",
-            "darkModeButton": "Modo Escuro"
+        "messageSection": {
+            "title": "Mensagens",
+            "inputPlaceholder": "Pesquisar conversas",
+            "archivedButton": "Arquivadas",
+            "pinnedTitle": "Conversas Fixadas",
+            "allChatsTitle": "Todas as Conversas"
         },
-        "profileSubTab": {
-            "title": "Perfil",
-            "nameLabel": "Nome",
-            "textBox": "Seu nome será exibido para seus contatos.",
-            "aboutLabel": "Sobre",
-            "buttonText": "Salvar"
+        "contactsSection": {
+            "title": "Contatos",
+            "inputPlaceholder": "Buscar contatos",
+            "newContactButton": "Novo Contato",
+            "myContactsTitle": "Meus Contatos"
         },
-        "languagesSubTab": {
-            "title": "Idioma"
+        "phoneSection": {
+            "warningTitle": "Em Desenvolvimento",
+            "warningMessage": "Esta funcionalidade está sendo desenvolvida no momento. Volte em breve para conferir as novidades!"
         },
-        "accountSubTab": {
-            "title": "Conta",
-            "userIdentitySection": {
-                "sectionTitle": "Identidade do Usuário",
-                "usernameLabel": "Nome de Usuário (ID Único)",
-                "usernameInputPlaceholder": "Nome de Usuário",
-                "emailLabel": "Endereço de E-mail",
-                "emailInputPlaceholder": "E-mail",
-                "saveIdentityChangesButton": "Salvar Alterações de Identidade"
+        "settingsSection": {
+            "mainTab": {
+                "title": "Configurações",
+                "appearanceButton": "Aparência",
+                "profileButton": "Perfil",
+                "languagesButton": "Idioma",
+                "accountButton": "Conta",
+                "privacyAndSecurityButton": "Privacidade e Segurança"
             },
-            "changePasswordSection": {
-                "sectionTitle": "Alterar Senha",
-                "currentPasswordLabel": "Senha Atual",
-                "newPasswordLabel": "Nova Senha",
-                "confirmPasswordLabel": "Confirmar Nova Senha",
-                "updatePasswordButton": "Atualizar Senha"
+            "appearanceSubTab": {
+                "title": "Aparência",
+                "darkModeButton": "Modo Escuro"
             },
-            "logOutButton": "Sair da Conta"
+            "profileSubTab": {
+                "title": "Perfil",
+                "nameLabel": "Nome",
+                "textBox": "Seu nome será exibido para seus contatos.",
+                "aboutLabel": "Sobre",
+                "buttonText": "Salvar"
+            },
+            "languagesSubTab": {
+                "title": "Idioma"
+            },
+            "accountSubTab": {
+                "title": "Conta",
+                "userIdentitySection": {
+                    "sectionTitle": "Identidade do Usuário",
+                    "usernameLabel": "Nome de Usuário (ID Único)",
+                    "usernameInputPlaceholder": "Nome de Usuário",
+                    "emailLabel": "Endereço de E-mail",
+                    "emailInputPlaceholder": "E-mail",
+                    "saveIdentityChangesButton": "Salvar Alterações de Identidade"
+                },
+                "changePasswordSection": {
+                    "sectionTitle": "Alterar Senha",
+                    "currentPasswordLabel": "Senha Atual",
+                    "newPasswordLabel": "Nova Senha",
+                    "confirmPasswordLabel": "Confirmar Nova Senha",
+                    "updatePasswordButton": "Atualizar Senha"
+                },
+                "logOutButton": "Sair da Conta"
+            },
+            "privacyAndSecuritySubTab": {
+                "title": "Privacidade e Segurança",
+                "twoFactorAuthTitle": "Autenticação de Dois Fatores (2FA)",
+                "statusText": "Status",
+                "buttonText": "Ativar 2FA",
+                "noteText": "Com a 2FA ativa, um código de segurança será enviado ao seu e-mail a cada novo login.",
+                "importantNoteTitle": "Observação Importante",
+                "importantNote": "Este aplicativo é um projeto de estudo e desenvolvimento sem fins lucrativos. Ele foi criado exclusivamente para fins de aprendizado e demonstração de habilidades técnicas.",
+                "securityDisclaimerTitle": "Aviso de Segurança",
+                "securityDisclaimerText": "Apenas os dados de senha são protegidos de forma segura. Outras informações da conta e todo o conteúdo das conversas não têm garantia de segurança. As conversas podem se tornar visíveis ou acessíveis de maneiras não intencionais. Use o serviço e seus recursos de conversação por sua conta e risco, e **não insira informações pessoais ou sensíveis**."
+            }
         },
-        "privacyAndSecuritySubTab": {
-            "title": "Privacidade e Segurança",
-            "twoFactorAuthTitle": "Autenticação de Dois Fatores (2FA)",
-            "statusText": "Status",
-            "buttonText": "Ativar 2FA",
-            "noteText": "Com a 2FA ativa, um código de segurança será enviado ao seu e-mail a cada novo login.",
-            "importantNoteTitle": "Observação Importante",
-            "importantNote": "Este aplicativo é um projeto de estudo e desenvolvimento sem fins lucrativos. Ele foi criado exclusivamente para fins de aprendizado e demonstração de habilidades técnicas.",
-            "securityDisclaimerTitle": "Aviso de Segurança",
-            "securityDisclaimerText": "Apenas os dados de senha são protegidos de forma segura. Outras informações da conta e todo o conteúdo das conversas não têm garantia de segurança. As conversas podem se tornar visíveis ou acessíveis de maneiras não intencionais. Use o serviço e seus recursos de conversação por sua conta e risco, e **não insira informações pessoais ou sensíveis**."
-        }
-    },
-    "modals": {
-        "addUserModal": {
-            "title": "Novo Contato",
-            "description": "Pesquise pelo nome de usuário para adicionar um novo contato.",
-            "emptyList": "Use a busca acima para encontrar usuários."
-        },
-        "twoFactorAuthModal": {
-            "title": "Ativar Autenticação de 2 Fatores (2FA)",
-            "description": "Insira o código de 6 dígitos enviado para o seu e-mail cadastrado.",
-            "buttonText": "Ativar Autenticação de 2 Fatores"
+        "modals": {
+            "addUserModal": {
+                "title": "Novo Contato",
+                "description": "Pesquise pelo nome de usuário para adicionar um novo contato.",
+                "emptyList": "Use a busca acima para encontrar usuários."
+            },
+            "twoFactorAuthModal": {
+                "title": "Ativar Autenticação de 2 Fatores (2FA)",
+                "description": "Insira o código de 6 dígitos enviado para o seu e-mail cadastrado.",
+                "buttonText": "Ativar Autenticação de 2 Fatores"
+            }
         }
     }
 }
