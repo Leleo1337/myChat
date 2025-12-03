@@ -1,8 +1,9 @@
 import ChatHeader from "../../components/mainApp/chat/ChatHeader";
 import ChatBody from "../../components/mainApp/chat/ChatBody";
 import EmptyChat from "../../components/mainApp/chat/EmptyChat";
+import type { ChatWindowProps } from "../../types/mainApp/chat/ChatWindowProps";
 
-export default function ChatWindow({ activeChat }: any) {
+export default function ChatWindow({ activeChat }: ChatWindowProps) {
     return (
         <>
             {activeChat ? (
