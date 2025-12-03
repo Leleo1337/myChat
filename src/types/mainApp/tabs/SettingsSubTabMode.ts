@@ -1,0 +1,1 @@
+export type SettingsSubTabMode = "options" | "appearance" | "profile" | "account" | "languages" | "privacityAndSecurity"
