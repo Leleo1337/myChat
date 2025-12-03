@@ -4,16 +4,11 @@ import { useState } from "react";
 import myChatLightThemeLogo from "../../../assets/myChat_lightTheme_LOGO.png";
 import myChatDarkThemeLogo from "../../../assets/myChat_darkTheme_LOGO.png";
 import { useNavigate } from "react-router";
+import type { ActiveTabTypes, NavigationBarProps } from "../../../types/mainApp/ui/NavigationBarTypes";
+import type { TabMode } from "../../../types/mainApp/tabs/TabMode";
 
-type tabTypes = {
-    message: boolean;
-    user: boolean;
-    phone: boolean;
-    settings: boolean;
-};
-
-export default function NavigationBar({ activateTab }: any) {
-    const [activeTab, setActiveTab] = useState<tabTypes>({
+export default function NavigationBar({ activateTab }: NavigationBarProps) {
+    const [activeTab, setActiveTab] = useState<ActiveTabTypes>({
         message: true,
         user: false,
         phone: false,
@@ -22,7 +17,7 @@ export default function NavigationBar({ activateTab }: any) {
     const navigate = useNavigate();
     const activeTabStyles = "bg-blue-500 text-white p-3 rounded-xl shadow-md transition-all duration-100";
 
-    function handleTabActivation(tab: string) {
+    function handleTabActivation(tab: TabMode) {
         const isMobile = window.innerWidth < 1024;
 
         setActiveTab({
