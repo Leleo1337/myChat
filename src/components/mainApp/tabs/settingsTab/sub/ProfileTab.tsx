@@ -2,8 +2,9 @@ import { ChevronLeft, User } from "lucide-react";
 import testProfilePicture from "../../../../../assets/testProfilePicture.jpg";
 import { useContext } from "react";
 import LanguageContext from "../../../../../context/LanguageContext";
+import type { SettingsSubTabProps } from "../../../../../types/mainApp/tabs/SettingsSubTabsProps";
 
-export default function ProfileTab({ setActiveSection }: any) {
+export default function ProfileTab({ setActiveSection }: SettingsSubTabProps) {
     const { languageData } = useContext(LanguageContext);
 
     return (

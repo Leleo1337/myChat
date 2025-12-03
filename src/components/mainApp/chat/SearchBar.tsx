@@ -6,7 +6,7 @@ export type searchBarTypes = {
 };
 
 export default function SearchBar({ isSearchBarActive }: searchBarTypes) {
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState<string>("");
     console.log(searchTerm);
 
     return (

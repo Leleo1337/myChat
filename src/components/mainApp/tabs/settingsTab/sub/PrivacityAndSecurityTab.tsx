@@ -2,8 +2,9 @@ import { ChevronLeft, Scale, Shield } from "lucide-react";
 import { useContext, useState } from "react";
 import TwoFactorAuthModal from "../../../ui/modals/TwoFactorAuthModal";
 import LanguageContext from "../../../../../context/LanguageContext";
+import type { SettingsSubTabProps } from "../../../../../types/mainApp/tabs/SettingsSubTabsProps";
 
-export default function PrivacityAndSecurityTab({ setActiveSection }: any) {
+export default function PrivacityAndSecurityTab({ setActiveSection }: SettingsSubTabProps) {
     const [twoFactorModalOpen, setTwoFactorModalOpen] = useState(false);
     const { languageData } = useContext(LanguageContext);
     const status = "Disabled";
