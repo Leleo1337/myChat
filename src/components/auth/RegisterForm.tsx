@@ -2,9 +2,14 @@ import { Link } from "react-router";
 import type { LangData } from "../../types/globals/LangData";
 import { AtSignIcon, InfoIcon, LockIcon, MailIcon, UserIcon } from "lucide-react";
 import { useState } from "react";
+import type { InfoActiveTypes } from "../../types/ui/InfoLabelTypes";
+import InfoLabel from "../ui/InfoLabel";
 
 export default function RegisterForm({ languageData }: { languageData: LangData }) {
-    const [infoActive, setInfoActive] = useState({ displayNameInfoActive: false, usernameInfoActive: false });
+    const [infoActive, setInfoActive] = useState<InfoActiveTypes>({
+        displayNameInfoActive: false,
+        usernameInfoActive: false,
+    });
 
     return (
         <>
@@ -18,34 +23,34 @@ export default function RegisterForm({ languageData }: { languageData: LangData 
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="flex flex-col w-full gap-4">
                 <div className="relative flex flex-col gap-1">
-                    <label htmlFor="dname" className="text-sm text-gray-800 dark:text-gray-200">
-                        {languageData.auth?.registerPage.displayNameLabel}
-                    </label>
+                    <InfoLabel infoActive={infoActive} languageData={languageData} setInfoActive={setInfoActive} />
                     <input
                         type="text"
                         id="dname"
                         name="dname"
                         className="p-3 pl-10 text-gray-900 placeholder-gray-400 transition duration-150 bg-white border border-gray-300 rounded-lg shadow-sm dark:border-gray-600 dark:bg-slate-800 dark:text-gray-100 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <div>
-                        <InfoIcon
-                            onMouseEnter={() => setInfoActive((prev) => ({ ...prev, displayNameInfoActive: true }))}
-                            onMouseLeave={() => setInfoActive((prev) => ({ ...prev, displayNameInfoActive: false }))}
-                            className="absolute w-4 h-4 text-blue-500 left-22 top-1"
-                        />
-                        <div
-                            className={`absolute py-0.5 px-4 -top-4 left-28 rounded-xl text-white bg-blue-500/80 transition ease-in duration-75 ${
-                                infoActive.displayNameInfoActive ? "opacity-100 " : "opacity-0"
-                            }`}>
-                            <p className="text-sm">{languageData.auth?.registerPage.displayNameToolTip}</p>
-                        </div>
-                    </div>
                     <UserIcon className="absolute w-4 h-4 text-blue-500 top-10.5 left-4" />
                 </div>
                 <div className="relative flex flex-col gap-1">
-                    <label htmlFor="username" className="text-sm text-gray-800 dark:text-gray-200">
-                        {languageData.auth?.registerPage.usernameLabel}
-                    </label>
+                    <div className="flex items-center gap-2 ">
+                        <label htmlFor="username" className="text-sm text-gray-800 dark:text-gray-200">
+                            {languageData.auth?.registerPage.usernameLabel}
+                        </label>
+                        <div className="md:relative">
+                            <InfoIcon
+                                onMouseEnter={() => setInfoActive((prev) => ({ ...prev, usernameInfoActive: true }))}
+                                onMouseLeave={() => setInfoActive((prev) => ({ ...prev, usernameInfoActive: false }))}
+                                className="w-4 h-4 text-blue-500"
+                            />
+                            <div
+                                className={`absolute left-1/2 -translate-x-1/2 md:translate-x-0  md:-top-4 md:left-4 w-full min-w-[300px] z-1 py-0.5 px-4 rounded-xl text-white bg-blue-500/80 transition ease-in duration-75 ${
+                                    infoActive.usernameInfoActive ? "opacity-100 " : "opacity-0"
+                                }`}>
+                                <p className="text-sm">{languageData.auth?.registerPage.usernameToolTip}</p>
+                            </div>
+                        </div>
+                    </div>
                     <input
                         type="text"
                         id="username"
@@ -54,17 +59,6 @@ export default function RegisterForm({ languageData }: { languageData: LangData 
                         className="px-4 py-2.5 pl-10 text-gray-900 placeholder-gray-400 transition duration-150 bg-white border border-gray-300 rounded-lg shadow-sm dark:border-gray-600 dark:bg-slate-800 dark:text-gray-100 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <AtSignIcon className="absolute w-4 h-4 text-blue-500 top-10 left-4" />
-                    <InfoIcon
-                        onMouseEnter={() => setInfoActive((prev) => ({ ...prev, usernameInfoActive: true }))}
-                        onMouseLeave={() => setInfoActive((prev) => ({ ...prev, usernameInfoActive: false }))}
-                        className="absolute w-4 h-4 text-blue-500 left-46 top-1"
-                    />
-                    <div
-                        className={` z-1 absolute py-0.5 px-4 md:-top-4 top-6 md:left-52 rounded-xl text-white bg-blue-500/80 transition ease-in duration-75 ${
-                            infoActive.usernameInfoActive ? "opacity-100 " : "opacity-0"
-                        }`}>
-                        <p className="text-sm">{languageData.auth?.registerPage.usernameToolTip}</p>
-                    </div>
                 </div>
                 <div className="relative flex flex-col gap-1">
                     <label htmlFor="email" className="text-sm text-gray-800 dark:text-gray-200">
