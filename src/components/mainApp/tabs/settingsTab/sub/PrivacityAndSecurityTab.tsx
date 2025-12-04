@@ -1,6 +1,6 @@
 import { ChevronLeft, Scale, Shield } from "lucide-react";
 import { useContext, useState } from "react";
-import TwoFactorAuthModal from "../../../ui/modals/TwoFactorAuthModal";
+import TwoFactorAuthModal from "../../../../ui/modals/TwoFactorAuthModal";
 import LanguageContext from "../../../../../context/LanguageContext";
 import type { SettingsSubTabProps } from "../../../../../types/mainApp/tabs/SettingsSubTabsProps";
 
