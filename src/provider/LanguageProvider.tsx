@@ -4,10 +4,11 @@ import pt from "../locales/pt.json";
 import en from "../locales/en.json";
 import type { LangMode } from "../types/globals/LangMode";
 import type { LanguageProviderTypes } from "../types/providers/LanguageProviderTypes";
+import type { LangData } from "../types/globals/LangData";
 
 export default function LanguageProvider({ children }: LanguageProviderTypes) {
     const [language, setLanguage] = useState<LangMode>("english");
-    const [languageData, setLanguageData] = useState<typeof en>(en);
+    const [languageData, setLanguageData] = useState<LangData>(en);
 
     function getLanguageData(lang: string) {
         if (lang == "portugues") return pt;

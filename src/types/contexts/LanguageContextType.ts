@@ -1,4 +1,4 @@
-import en from "../../locales/en.json";
+import type { LangData } from "../globals/LangData";
 import type { LangMode } from "../globals/LangMode";
 
 type setLanguageType = React.Dispatch<React.SetStateAction<"portugues" | "english">>;
@@ -6,5 +6,5 @@ type setLanguageType = React.Dispatch<React.SetStateAction<"portugues" | "englis
 export interface LanguageContextType {
     language: LangMode;
     setLanguage: setLanguageType;
-    languageData: typeof en;
+    languageData: LangData;
 }
