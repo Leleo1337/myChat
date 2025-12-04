@@ -12,9 +12,15 @@ export default function ThemeButtons({
     return (
         <>
             {currentTheme == "dark" ? (
-                <SunIcon onClick={() => setCurrentTheme("light")} className="cursor-pointer hover:text-blue-500" />
+                <SunIcon
+                    onClick={() => setCurrentTheme("light")}
+                    className="text-gray-600 cursor-pointer dark:text-slate-100 hover:text-blue-500"
+                />
             ) : (
-                <MoonIcon onClick={() => setCurrentTheme("dark")} className="cursor-pointer hover:text-blue-500" />
+                <MoonIcon
+                    onClick={() => setCurrentTheme("dark")}
+                    className="text-gray-600 cursor-pointer dark:text-slate-100 hover:text-blue-500"
+                />
             )}
         </>
     );

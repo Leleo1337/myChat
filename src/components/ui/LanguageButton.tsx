@@ -1,5 +1,5 @@
 import { LanguagesIcon } from "lucide-react";
-import LanguageSelector from "./LanguageSelector";
+import LanguageSelectorMenu from "./LanguageSelectorMenu";
 import type { LanguageButtonProps } from "../../types/ui/LanguageButtonTypes";
 
 export default function LanguageButton({
@@ -13,10 +13,10 @@ export default function LanguageButton({
                 <LanguagesIcon
                     ref={languageIconRef}
                     onClick={() => setLanguageSelectorOpen(!languageSelectorOpen)}
-                    className="cursor-pointer hover:text-blue-500"
+                    className="text-gray-600 cursor-pointer dark:text-slate-100 hover:text-blue-500"
                 />
                 {languageSelectorOpen && (
-                    <LanguageSelector
+                    <LanguageSelectorMenu
                         activeLang={activeLang}
                         changeLangHandler={handleLanguageChange}
                         ref={languageSelectorRef}
