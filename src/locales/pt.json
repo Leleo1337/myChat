@@ -29,14 +29,14 @@
       }
     },
     "securitySection": {
-      "title": "Aviso de Segurança",
+      "title": "Transparência de Segurança",
       "points": {
         "point1": "Apenas sua senha é protegida de forma segura.",
         "point2": "Outras informações da conta (como nome, email) não têm segurança garantida.",
         "point3": "Conteúdo de Chat/Conversa: O sigilo de todo o conteúdo das conversas não é garantido.",
         "point4": "Conversas podem, acidentalmente, tornar-se acessíveis ou visíveis a terceiros."
       },
-      "criticalWarning": "Aviso Crítico: Não insira nenhuma informação pessoal ou sensível nas funcionalidades de chat. Use o serviço por sua conta e risco."
+      "criticalWarning": "Alerta Importante: Não insira informações pessoais ou confidenciais no chat. Use este serviço por sua conta e risco."
     },
     "footer": {
       "copyright": "Todos os direitos reservados."
@@ -46,7 +46,7 @@
     "loginPage": {
       "welcomeTitle": "Bem-vindo ao myChat!",
       "signInMessage": "Entre na sua conta",
-      "emailLabel": "Email",
+      "emailLabel": "Email ou Nome de Usuário",
       "passwordLabel": "Senha",
       "signInButton": "Entrar",
       "noAccount": "Não tem uma conta?",
@@ -59,7 +59,14 @@
       "registerMessage": "Insira suas informações para se registrar.",
       "registerButton": "Registrar",
       "hasAccount": "Já tem uma conta?",
-      "hasAccountLink": "Fazer Login"
+      "hasAccountLink": "Fazer Login",
+      "usernameToolTip": "Seu identificador único no myChat. É o que as pessoas usam para te encontrar e te adicionar como contato.",
+      "displayNameToolTip": "Este nome será visível para seus contatos.",
+      "displayNameLabel": "Nome de Exibição",
+      "emailLabel": "Email",
+      "usernameLabel": "Nome de Usuário (identificador único)",
+      "passwordLabel": "Senha",
+      "confirmPasswordLabel": "Confirmar senha"
     }
   },
   "mainApp": {
@@ -135,9 +142,9 @@
         "statusText": "Status",
         "buttonText": "Ativar 2FA",
         "noteText": "Com o 2FA ativo, um código de segurança será enviado para o seu email a cada novo login.",
-        "importantNoteTitle": "Nota Importante",
+        "importantNoteTitle": "Sobre este Projeto",
         "importantNote": "Este aplicativo é um projeto de estudo e desenvolvimento sem fins lucrativos. Foi criado exclusivamente para fins de aprendizado e demonstração de habilidades técnicas.",
-        "securityDisclaimerTitle": "Aviso de Segurança",
+        "securityDisclaimerTitle": "Limitações de Segurança",
         "securityDisclaimerText": "Apenas os dados de senha são protegidos de forma segura. Outras informações da conta e todo o conteúdo de conversas não têm segurança garantida. As conversas podem se tornar visíveis ou acessíveis de forma não intencional. Use o serviço e seus recursos de chat por sua conta e risco, e **não insira informações pessoais ou sensíveis**."
       }
     },

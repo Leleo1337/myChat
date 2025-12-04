@@ -1,157 +1,164 @@
 {
-  "landingPage": {
-    "header": {
-      "title": "myChat",
-      "navButtons": {
-        "resourcesButton": "Resources",
-        "securityButton": "Security",
-        "startButton": "Get Started"
-      }
-    },
-    "heroSection": {
-      "headline": "Connect with people who matter",
-      "subtitle": "A modern messaging platform to keep your conversations organized.",
-      "buttonText": "Get Started Now"
-    },
-    "featuresSection": {
-      "title": "Why choose myChat?",
-      "feature1": {
-        "title": "Fast and Efficient",
-        "text": "Instant messaging with real-time synchronization across all your devices"
-      },
-      "feature2": {
-        "title": "2FA Authentication",
-        "text": "Secure your account with two-factor authentication for added safety"
-      },
-      "feature3": {
-        "title": "Organized",
-        "text": "Pin important conversations and keep everything organized in one place"
-      }
-    },
-    "securitySection": {
-      "title": "Security Warning",
-      "points": {
-        "point1": "Only your password is securely protected.",
-        "point2": "Other account information (like name, email) is not guaranteed to be secure.",
-        "point3": "Chat/Conversation Content: The secrecy of all conversation content is not guaranteed.",
-        "point4": "Conversations may accidentally become accessible or visible to third parties."
-      },
-      "criticalWarning": "Critical Warning: Do not input any personal or sensitive information into the chat functionalities. Use the service at your own risk."
-    },
-    "footer": {
-      "copyright": "All rights reserved."
-    }
-  },
-  "auth": {
-    "loginPage": {
-      "welcomeTitle": "Welcome to myChat!",
-      "signInMessage": "Sign in to your account",
-      "emailLabel": "Email",
-      "passwordLabel": "Password",
-      "signInButton": "Sign In",
-      "noAccount": "Don't have an account?",
-      "signUpLink": "Sign Up",
-      "sidebarTitle": "Connect with anyone, anywhere.",
-      "sidebarSubtitle": "Welcome to myChat!"
-    },
-    "registerPage": {
-      "welcomeTitle": "Create Account",
-      "registerMessage": "Enter your information to register.",
-      "registerButton": "Register",
-      "hasAccount": "Already have an account?",
-      "hasAccountLink": "Log In"
-    }
-  },
-  "mainApp": {
-    "chatsSection": {
-      "startOfConversation": "This is the start of your conversation",
-      "emptyChat": {
-        "title": "Select a conversation to start",
-        "buttonText": "Search contacts"
-      }
-    },
-    "messageSection": {
-      "title": "Messages",
-      "inputPlaceholder": "Search conversations",
-      "archivedButton": "Archived",
-      "pinnedTitle": "Pinned Chats",
-      "allChatsTitle": "All Chats"
-    },
-    "contactsSection": {
-      "title": "Contacts",
-      "inputPlaceholder": "Search contacts",
-      "newContactButton": "New Contact",
-      "myContactsTitle": "My Contacts"
-    },
-    "phoneSection": {
-      "warningTitle": "Under Development",
-      "warningMessage": "This feature is currently being developed. Check back soon for updates!"
-    },
-    "settingsSection": {
-      "mainTab": {
-        "title": "Settings",
-        "appearanceButton": "Appearance",
-        "profileButton": "Profile",
-        "languagesButton": "Language",
-        "accountButton": "Account",
-        "privacyAndSecurityButton": "Privacy and Security"
-      },
-      "appearanceSubTab": {
-        "title": "Appearance",
-        "darkModeButton": "Dark Mode"
-      },
-      "profileSubTab": {
-        "title": "Profile",
-        "nameLabel": "Name",
-        "textBox": "Your name will be displayed to your contacts.",
-        "aboutLabel": "About",
-        "buttonText": "Save"
-      },
-      "languagesSubTab": {
-        "title": "Language"
-      },
-      "accountSubTab": {
-        "title": "Account",
-        "userIdentitySection": {
-          "sectionTitle": "User Identity",
-          "usernameLabel": "Username (Unique ID)",
-          "usernameInputPlaceholder": "Username",
-          "emailLabel": "Email Address",
-          "emailInputPlaceholder": "Email",
-          "saveIdentityChangesButton": "Save Identity Changes"
+    "landingPage": {
+        "header": {
+            "title": "myChat",
+            "navButtons": {
+                "resourcesButton": "Resources",
+                "securityButton": "Security",
+                "startButton": "Get Started"
+            }
         },
-        "changePasswordSection": {
-          "sectionTitle": "Change Password",
-          "currentPasswordLabel": "Current Password",
-          "newPasswordLabel": "New Password",
-          "confirmPasswordLabel": "Confirm New Password",
-          "updatePasswordButton": "Update Password"
+        "heroSection": {
+            "headline": "Connect with people who matter",
+            "subtitle": "A modern messaging platform to keep your conversations organized.",
+            "buttonText": "Get Started Now"
         },
-        "logOutButton": "Log Out"
-      },
-      "privacyAndSecuritySubTab": {
-        "title": "Privacy and Security",
-        "twoFactorAuthTitle": "Two-Factor Authentication (2FA)",
-        "statusText": "Status",
-        "buttonText": "Activate 2FA",
-        "noteText": "With 2FA active, a security code will be sent to your email upon every new login.",
-        "importantNoteTitle": "Important Note",
-        "importantNote": "This application is a non-profit study and development project. It was created exclusively for learning purposes and technical skill demonstration.",
-        "securityDisclaimerTitle": "Security Warning",
-        "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Conversations may become unintentionally visible or accessible. Use the service and its chat features at your own risk, and **do not enter personal or sensitive information**."
-      }
+        "featuresSection": {
+            "title": "Why choose myChat?",
+            "feature1": {
+                "title": "Fast and Efficient",
+                "text": "Instant messaging with real-time synchronization across all your devices"
+            },
+            "feature2": {
+                "title": "2FA Authentication",
+                "text": "Secure your account with two-factor authentication for added safety"
+            },
+            "feature3": {
+                "title": "Organized",
+                "text": "Pin important conversations and keep everything organized in one place"
+            }
+        },
+        "securitySection": {
+            "title": "Security Transparency",
+            "points": {
+                "point1": "Only your password is securely protected.",
+                "point2": "Other account information (like name, email) is not guaranteed to be secure.",
+                "point3": "Chat/Conversation Content: The secrecy of all conversation content is not guaranteed.",
+                "point4": "Conversations may accidentally become accessible or visible to third parties."
+            },
+            "criticalWarning": "Important Alert: Do not input personal or sensitive information into the chat features. Use the service at your own risk."
+        },
+        "footer": {
+            "copyright": "All rights reserved."
+        }
     },
-    "modals": {
-      "addUserModal": {
-        "title": "New Contact",
-        "description": "Search by username to add a new contact.",
-        "emptyList": "Use the search bar above to find users."
-      },
-      "twoFactorAuthModal": {
-        "title": "Activate Two-Factor Authentication (2FA)",
-        "description": "Enter the 6-digit code sent to your registered email.",
-        "buttonText": "Activate Two-Factor Authentication"
-      }
+    "auth": {
+        "loginPage": {
+            "welcomeTitle": "Welcome to myChat!",
+            "signInMessage": "Sign in to your account",
+            "emailLabel": "Email or Username",
+            "passwordLabel": "Password",
+            "signInButton": "Sign In",
+            "noAccount": "Don't have an account?",
+            "signUpLink": "Sign Up",
+            "sidebarTitle": "Connect with anyone, anywhere.",
+            "sidebarSubtitle": "Welcome to myChat!"
+        },
+        "registerPage": {
+            "welcomeTitle": "Create Account",
+            "registerMessage": "Enter your information to register.",
+            "registerButton": "Register",
+            "hasAccount": "Already have an account?",
+            "hasAccountLink": "Log In",
+            "usernameToolTip": "Your unique identifier on myChat. This is what people use to find and add you as a contact.",
+            "displayNameToolTip": "This name will be visible to your contacts.",
+            "displayNameLabel": "Display name",
+            "emailLabel": "Email",
+            "usernameLabel": "Username (unique identifier)",
+            "passwordLabel": "Password",
+            "confirmPasswordLabel": "Confirm password"
+        }
+    },
+    "mainApp": {
+        "chatsSection": {
+            "startOfConversation": "This is the start of your conversation",
+            "emptyChat": {
+                "title": "Select a conversation to start",
+                "buttonText": "Search contacts"
+            }
+        },
+        "messageSection": {
+            "title": "Messages",
+            "inputPlaceholder": "Search conversations",
+            "archivedButton": "Archived",
+            "pinnedTitle": "Pinned Chats",
+            "allChatsTitle": "All Chats"
+        },
+        "contactsSection": {
+            "title": "Contacts",
+            "inputPlaceholder": "Search contacts",
+            "newContactButton": "New Contact",
+            "myContactsTitle": "My Contacts"
+        },
+        "phoneSection": {
+            "warningTitle": "Under Development",
+            "warningMessage": "This feature is currently being developed. Check back soon for updates!"
+        },
+        "settingsSection": {
+            "mainTab": {
+                "title": "Settings",
+                "appearanceButton": "Appearance",
+                "profileButton": "Profile",
+                "languagesButton": "Language",
+                "accountButton": "Account",
+                "privacyAndSecurityButton": "Privacy and Security"
+            },
+            "appearanceSubTab": {
+                "title": "Appearance",
+                "darkModeButton": "Dark Mode"
+            },
+            "profileSubTab": {
+                "title": "Profile",
+                "nameLabel": "Name",
+                "textBox": "Your name will be displayed to your contacts.",
+                "aboutLabel": "About",
+                "buttonText": "Save"
+            },
+            "languagesSubTab": {
+                "title": "Language"
+            },
+            "accountSubTab": {
+                "title": "Account",
+                "userIdentitySection": {
+                    "sectionTitle": "User Identity",
+                    "usernameLabel": "Username (Unique ID)",
+                    "usernameInputPlaceholder": "Username",
+                    "emailLabel": "Email Address",
+                    "emailInputPlaceholder": "Email",
+                    "saveIdentityChangesButton": "Save Identity Changes"
+                },
+                "changePasswordSection": {
+                    "sectionTitle": "Change Password",
+                    "currentPasswordLabel": "Current Password",
+                    "newPasswordLabel": "New Password",
+                    "confirmPasswordLabel": "Confirm New Password",
+                    "updatePasswordButton": "Update Password"
+                },
+                "logOutButton": "Log Out"
+            },
+            "privacyAndSecuritySubTab": {
+                "title": "Privacy and Security",
+                "twoFactorAuthTitle": "Two-Factor Authentication (2FA)",
+                "statusText": "Status",
+                "buttonText": "Activate 2FA",
+                "noteText": "With 2FA active, a security code will be sent to your email upon every new login.",
+                "importantNoteTitle": "About this Project",
+                "importantNote": "This application is a non-profit study and development project. It was created exclusively for learning purposes and technical skill demonstration.",
+                "securityDisclaimerTitle": "Security Limitations",
+                "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Conversations may become unintentionally visible or accessible. Use the service and its chat features at your own risk, and **do not enter personal or sensitive information**."
+            }
+        },
+        "modals": {
+            "addUserModal": {
+                "title": "New Contact",
+                "description": "Search by username to add a new contact.",
+                "emptyList": "Use the search bar above to find users."
+            },
+            "twoFactorAuthModal": {
+                "title": "Activate Two-Factor Authentication (2FA)",
+                "description": "Enter the 6-digit code sent to your registered email.",
+                "buttonText": "Activate Two-Factor Authentication"
+            }
+        }
     }
-  }
 }
