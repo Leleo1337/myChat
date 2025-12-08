@@ -11,17 +11,17 @@
         "heroSection": {
             "headline": "Connect with people who matter",
             "subtitle": "A modern messaging platform to keep your conversations organized.",
-            "buttonText": "Get Started Now"
+            "buttonText": "Start Now"
         },
         "featuresSection": {
             "title": "Why choose myChat?",
             "feature1": {
                 "title": "Fast and Efficient",
-                "text": "Instant messaging with real-time synchronization across all your devices"
+                "text": "Instant messaging with real-time sync across all your devices"
             },
             "feature2": {
                 "title": "2FA Authentication",
-                "text": "Secure your account with two-factor authentication for added safety"
+                "text": "Protect your account with two-factor authentication for enhanced security"
             },
             "feature3": {
                 "title": "Organized",
@@ -32,11 +32,11 @@
             "title": "Security Transparency",
             "points": {
                 "point1": "Only your password is securely protected.",
-                "point2": "Other account information (like name, email) is not guaranteed to be secure.",
-                "point3": "Chat/Conversation Content: The secrecy of all conversation content is not guaranteed.",
-                "point4": "Conversations may accidentally become accessible or visible to third parties."
+                "point2": "Other account information (such as name, email) is not guaranteed to be secure.",
+                "point3": "Chat/Conversation Content: The privacy of all conversation content is not guaranteed.",
+                "point4": "Conversas may accidentally become accessible or visible to third parties."
             },
-            "criticalWarning": "Important Alert: Do not input personal or sensitive information into the chat features. Use the service at your own risk."
+            "criticalWarning": "Important Alert: Do not enter personal or confidential information in the chat. Use this service at your own risk."
         },
         "footer": {
             "copyright": "All rights reserved."
@@ -50,10 +50,10 @@
             "passwordLabel": "Password",
             "signInButton": "Sign In",
             "noAccount": "Don't have an account?",
-            "signUpLink": "Sign Up",
+            "signUpLink": "Sign up",
             "sidebarTitle": "Connect with anyone, anywhere.",
             "sidebarSubtitle": "Welcome to myChat!",
-            "forgotPassword": "Forgot password?"
+            "forgotPassword": "Forgot your password?"
         },
         "registerPage": {
             "welcomeTitle": "Create Account",
@@ -61,13 +61,24 @@
             "registerButton": "Register",
             "hasAccount": "Already have an account?",
             "hasAccountLink": "Log In",
-            "usernameToolTip": "Your unique identifier on myChat. This is what people use to find and add you as a contact.",
+            "usernameToolTip": "Your unique myChat handle. It's how people find and add you as a contact.",
             "displayNameToolTip": "This name will be visible to your contacts.",
-            "displayNameLabel": "Display name",
+            "displayNameLabel": "Display Name",
             "emailLabel": "Email",
             "usernameLabel": "Username (unique identifier)",
             "passwordLabel": "Password",
             "confirmPasswordLabel": "Confirm password"
+        },
+        "forgotPasswordPage": {
+            "title": "Forgot your password?",
+            "subtitle": "Enter your email to receive a recovery link.",
+            "emailLabel": "Email",
+            "submitButton": "Send recovery link",
+            "resetTitle": "Reset password",
+            "resetSubtitle": "Choose a new password for your account",
+            "newPasswordLabel": "New password",
+            "confirmPasswordLabel": "Confirm password",
+            "updateButton": "Update password"
         }
     },
     "mainApp": {
@@ -82,8 +93,8 @@
             "title": "Messages",
             "inputPlaceholder": "Search conversations",
             "archivedButton": "Archived",
-            "pinnedTitle": "Pinned Chats",
-            "allChatsTitle": "All Chats"
+            "pinnedTitle": "Pinned Conversations",
+            "allChatsTitle": "All Conversations"
         },
         "contactsSection": {
             "title": "Contacts",
@@ -93,7 +104,7 @@
         },
         "phoneSection": {
             "warningTitle": "Under Development",
-            "warningMessage": "This feature is currently being developed. Check back soon for updates!"
+            "warningMessage": "This feature is currently under development. Check back soon for updates!"
         },
         "settingsSection": {
             "mainTab": {
@@ -141,12 +152,12 @@
                 "title": "Privacy and Security",
                 "twoFactorAuthTitle": "Two-Factor Authentication (2FA)",
                 "statusText": "Status",
-                "buttonText": "Activate 2FA",
-                "noteText": "With 2FA active, a security code will be sent to your email upon every new login.",
+                "buttonText": "Enable 2FA",
+                "noteText": "With 2FA active, a security code will be sent to your email with every new login.",
                 "importantNoteTitle": "About this Project",
-                "importantNote": "This application is a non-profit study and development project. It was created exclusively for learning purposes and technical skill demonstration.",
+                "importantNote": "This app is a non-profit study and development project. It was created exclusively for learning purposes and technical skill demonstration.",
                 "securityDisclaimerTitle": "Security Limitations",
-                "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Conversations may become unintentionally visible or accessible. Use the service and its chat features at your own risk, and **do not enter personal or sensitive information**."
+                "securityDisclaimerText": "Only password data is securely protected. Other account information and all conversation content are not guaranteed to be secure. Conversations may unintentionally become visible or accessible. Use the service and its chat features at your own risk, and **do not enter personal or sensitive information**."
             }
         },
         "modals": {
@@ -156,9 +167,9 @@
                 "emptyList": "Use the search bar above to find users."
             },
             "twoFactorAuthModal": {
-                "title": "Activate Two-Factor Authentication (2FA)",
+                "title": "Enable Two-Factor Authentication (2FA)",
                 "description": "Enter the 6-digit code sent to your registered email.",
-                "buttonText": "Activate Two-Factor Authentication"
+                "buttonText": "Enable Two-Factor Authentication"
             }
         }
     }

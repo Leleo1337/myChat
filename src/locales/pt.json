@@ -68,6 +68,17 @@
             "usernameLabel": "Nome de Usuário (identificador único)",
             "passwordLabel": "Senha",
             "confirmPasswordLabel": "Confirmar senha"
+        },
+        "forgotPasswordPage": {
+            "title": "Esqueceu sua senha?",
+            "subtitle": "Digite seu email para receber um link de recuperação.",
+            "emailLabel": "Email",
+            "submitButton": "Enviar link de recuperação",
+            "resetTitle": "Redefinir senha",
+            "resetSubtitle": "Escolha uma nova senha para sua conta",
+            "newPasswordLabel": "Nova senha",
+            "confirmPasswordLabel": "Confirmar senha",
+            "updateButton": "Atualizar senha"
         }
     },
     "mainApp": {
