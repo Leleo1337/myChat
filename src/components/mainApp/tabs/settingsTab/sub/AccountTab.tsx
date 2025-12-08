@@ -2,6 +2,7 @@ import { ChevronLeft, Eye, EyeOff, Key, LockKeyhole, LogOut, Mail, User } from "
 import { useContext, useState } from "react";
 import LanguageContext from "../../../../../context/LanguageContext";
 import type { SettingsSubTabProps } from "../../../../../types/mainApp/tabs/SettingsSubTabsProps";
+import InputIcon from "../../../../ui/InputIcon";
 
 export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
     const [passwordsInputsTypes, setPasswordsInputsTypes] = useState({
@@ -40,15 +41,13 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                                 {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.usernameLabel}
                             </label>
                             <div className="relative">
-                                <input
-                                    type="text"
-                                    name="username"
-                                    id="username"
+                                <InputIcon
+                                    id="2"
+                                    Icon={User}
                                     className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
-                                    placeholder="username"
-                                    value={"leandrolegal123"}
+                                    name="username"
+                                    type="text"
                                 />
-                                <User className="absolute text-gray-500 top-3 left-4 dark:text-gray-400" size={18} />
                             </div>
                         </div>
                         <div>
@@ -56,25 +55,23 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                                 {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.emailLabel}
                             </label>
                             <div className="relative">
-                                <input
-                                    type="text"
-                                    name="email"
-                                    id="email"
+                                <InputIcon
+                                    id="2"
+                                    Icon={Mail}
                                     className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
-                                    placeholder={
-                                        languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection
-                                            .emailInputPlaceholder
-                                    }
-                                    value={"leandrolegal@gmail.com"}
+                                    name="email"
+                                    type="email"
                                 />
-                                <Mail className="absolute text-gray-500 top-3 left-4 dark:text-gray-400" size={18} />
                             </div>
                         </div>
                         <button
                             className={`w-full py-2 text-base cursor-pointer font-bold rounded-xl transition-all duration-300 
                         bg-blue-500 hover:bg-blue-700 text-white shadow-sm 
                         shadow-blue-500/30`}>
-                            {languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection.saveIdentityChangesButton}
+                            {
+                                languageData.mainApp.settingsSection?.accountSubTab.userIdentitySection
+                                    .saveIdentityChangesButton
+                            }
                         </button>
                     </div>
                 </div>
@@ -95,15 +92,12 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                                     }
                                 </label>
                                 <div className="relative">
-                                    <input
-                                        type={passwordsInputsTypes.current}
+                                    <InputIcon
+                                        id="3"
+                                        Icon={LockKeyhole}
+                                        className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
                                         name="currentPassword"
-                                        id="currentPassword"
-                                        className="w-full px-12 py-2 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
-                                    />
-                                    <LockKeyhole
-                                        className="absolute text-gray-500 top-3 left-4 dark:text-gray-400"
-                                        size={18}
+                                        type={passwordsInputsTypes.current}
                                     />
                                     {passwordsInputsTypes.current == "text" ? (
                                         <EyeOff
@@ -126,18 +120,18 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                             </div>
                             <div>
                                 <label htmlFor="newPassword" className="text-sm text-gray-800 dark:text-gray-200">
-                                    {languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection.newPasswordLabel}
+                                    {
+                                        languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection
+                                            .newPasswordLabel
+                                    }
                                 </label>
                                 <div className="relative">
-                                    <input
-                                        type={passwordsInputsTypes.new}
+                                    <InputIcon
+                                        id="4"
+                                        Icon={LockKeyhole}
+                                        className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
                                         name="newPassword"
-                                        id="newPassword"
-                                        className="w-full px-12 py-2 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
-                                    />
-                                    <LockKeyhole
-                                        className="absolute text-gray-500 top-3 left-4 dark:text-gray-400"
-                                        size={18}
+                                        type={passwordsInputsTypes.new}
                                     />
                                     {passwordsInputsTypes.new == "text" ? (
                                         <EyeOff
@@ -166,16 +160,12 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                                     }
                                 </label>
                                 <div className="relative">
-                                    <input
-                                        type={passwordsInputsTypes.confirmNew}
+                                    <InputIcon
+                                        id="5"
+                                        Icon={LockKeyhole}
+                                        className="w-full py-2 pl-12 pr-4 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
                                         name="confirmNew"
-                                        id="confirmNew"
-                                        className="w-full px-12 py-2 text-gray-800 placeholder-gray-500 transition-all duration-200 bg-gray-100 border border-gray-300 rounded-md focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 focus:outline-none dark:text-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:placeholder-slate-500"
-                                        autoComplete="off"
-                                    />
-                                    <LockKeyhole
-                                        className="absolute text-gray-500 top-3 left-4 dark:text-gray-400"
-                                        size={18}
+                                        type={passwordsInputsTypes.confirmNew}
                                     />
                                     {passwordsInputsTypes.confirmNew == "text" ? (
                                         <EyeOff
@@ -200,7 +190,10 @@ export default function AccountTab({ setActiveSection }: SettingsSubTabProps) {
                                 className={`w-full py-2 text-base cursor-pointer font-bold rounded-xl transition-all duration-300 
                         bg-green-600 hover:bg-green-700 text-white shadow-sm 
                         shadow-green-600/30`}>
-                                {languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection.updatePasswordButton}
+                                {
+                                    languageData.mainApp.settingsSection?.accountSubTab.changePasswordSection
+                                        .updatePasswordButton
+                                }
                             </button>
                         </div>
                         <button className="flex items-center justify-center w-full gap-2 py-2 font-semibold text-red-500 border border-red-500 rounded-md cursor-pointer hover:bg-red-500 hover:text-white">
